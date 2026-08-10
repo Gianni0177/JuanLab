@@ -1,53 +1,115 @@
 {
   "period": "16 Ago – 16 Set 2026",
   "gimmick": "Luster-Piercing Moon: Mentre il personaggio attivo si trova all'interno di un Polestar Field, quando infligge DAN agli avversari, i suoi attacchi scateneranno un'onda d'urto nella posizione dell'avversario che infligge DAN puri. Può attivarsi una volta ogni 4s.",
+  "buff_first": "Il danno da Superconduct aumentato del 200% e il danno da Stellar-Conduct aumentato del 75%.",
+  "buff_second": "I danni da Normal Attack Pyro aumentati del 75%.",
   "slots": [
     {
-      "slot": 1, 
+      "slot": 1,
       "label": "Piano 12-1 Prima Metà",
       "enemies": [
-        { "id": "Apparatus_Enigma_BionicDrone", "level": 95, "hp": 511072, "quantity": 1 },
-        { "id": "Apparatus_Enigma_BionicNettler", "level": 95, "hp": 715501, "quantity": 1 },
-        { "id": "Apparatus_Perpetual", "level": 95, "hp": 2725720, "quantity": 1 }
+        {
+          "id": "Apparatus_Enigma_BionicDrone",
+          "level": 95,
+          "hp": 511072,
+          "quantity": 1
+        },
+        {
+          "id": "Apparatus_Enigma_BionicNettler",
+          "level": 95,
+          "hp": 715501,
+          "quantity": 1
+        },
+        {
+          "id": "Apparatus_Perpetual",
+          "level": 95,
+          "hp": 2725720,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 2, 
+      "slot": 2,
       "label": "Piano 12-1 Seconda Metà",
       "enemies": [
-        { "id": "MachinaIustitia_Excavator", "level": 95, "hp": 1192502, "quantity": 1 },
-        { "id": "MachinaIustitia_Nutcracker", "level": 95, "hp": 2555362, "quantity": 1 }
+        {
+          "id": "MachinaIustitia_Excavator",
+          "level": 95,
+          "hp": 1192502,
+          "quantity": 1
+        },
+        {
+          "id": "MachinaIustitia_Nutcracker",
+          "level": 95,
+          "hp": 2555362,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 3, 
+      "slot": 3,
       "label": "Piano 12-2 Prima Metà",
       "enemies": [
-        { "id": "Chimera_BearDeer", "level": 98, "hp": 1545018, "quantity": 1 },
-        { "id": "Chimera_Manticore", "level": 98, "hp": 1429994, "quantity": 1 }
+        {
+          "id": "Chimera_BearDeer",
+          "level": 98,
+          "hp": 1545018,
+          "quantity": 1
+        },
+        {
+          "id": "Chimera_Manticore",
+          "level": 98,
+          "hp": 1429994,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 4, 
+      "slot": 4,
       "label": "Piano 12-2 Seconda Metà",
       "enemies": [
-        { "id": "Abyss_Ice_01", "level": 98, "hp": 229937, "quantity": 1 },
-        { "id": "Invoker_Archdeacon", "level": 98, "hp": 1931272, "quantity": 1 }
+        {
+          "id": "Abyss_Ice_01",
+          "level": 98,
+          "hp": 229937,
+          "quantity": 1
+        },
+        {
+          "id": "Invoker_Archdeacon",
+          "level": 98,
+          "hp": 1931272,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 5, 
+      "slot": 5,
       "label": "Piano 12-3 Prima Metà",
       "enemies": [
-        { "id": "Volkodlak_Greyhound_Furiosa", "level": 100, "hp": 5334976, "quantity": 1 }
+        {
+          "id": "Volkodlak_Greyhound_Furiosa",
+          "level": 100,
+          "hp": 5334976,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 6, 
+      "slot": 6,
       "label": "Piano 12-3 Seconda Metà",
       "enemies": [
-        { "id": "ToothTrap", "level": 100, "hp": 1455825, "quantity": 1 },
-        { "id": "Natsaurus_Hookwalker_Primo", "level": 100, "hp": 5615327, "quantity": 1 }
+        {
+          "id": "ToothTrap",
+          "level": 100,
+          "hp": 1455825,
+          "quantity": 1
+        },
+        {
+          "id": "Natsaurus_Hookwalker_Primo",
+          "level": 100,
+          "hp": 5615327,
+          "quantity": 1
+        }
       ]
     }
   ]

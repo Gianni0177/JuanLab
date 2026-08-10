@@ -39,6 +39,13 @@
     label.textContent = slot.label;
     slotEl.appendChild(label);
 
+    if (slot.buff) {
+      const buff = document.createElement('p');
+      buff.className = 'slot-buff';
+      buff.textContent = slot.buff;
+      slotEl.appendChild(buff);
+    }
+
     const enemiesEl = document.createElement('div');
     enemiesEl.className = 'slot-enemies';
     const enemies = slot.enemies ?? [];
@@ -75,9 +82,14 @@
   function render(data) {
     // sezione gimmick / periodo
     if (meta) {
+      const buffRows = [
+        data.buff_first  ? `<div class="abyss-buff"><span class="buff-half">Prima Metà</span>${data.buff_first}</div>`  : '',
+        data.buff_second ? `<div class="abyss-buff"><span class="buff-half">Seconda Metà</span>${data.buff_second}</div>` : '',
+      ].join('');
       meta.innerHTML = `
         <div class="abyss-period">${data.period ?? ''}</div>
-        <p class="abyss-gimmick">${data.gimmick ?? ''}</p>`;
+        <p class="abyss-gimmick">${data.gimmick ?? ''}</p>
+        ${buffRows}`;
     }
 
     // griglia: raggruppa slot a coppie (Camera 1, 2, 3)
@@ -118,5 +130,25 @@
 
   document.querySelector('[data-abyss="now"]')?.setAttribute('aria-current', 'true');
   render(dataNow);
+
+  // download griglia come PNG
+  document.getElementById('btn-download')?.addEventListener('click', async () => {
+    const btn = document.getElementById('btn-download');
+    btn.disabled = true;
+    btn.textContent = 'Generazione...';
+    const target = document.querySelector('main.container');
+    const canvas = await html2canvas(target, {
+      backgroundColor: '#060810',
+      scale: 2,
+      useCORS: true,
+      ignoreElements: el => el.id === 'stars' || el.id === 'btn-download',
+    });
+    const link = document.createElement('a');
+    link.download = 'spyral-abyss.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+    btn.disabled = false;
+    btn.textContent = '\u2193 Scarica immagine';
+  });
 }());
 

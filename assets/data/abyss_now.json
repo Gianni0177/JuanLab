@@ -1,53 +1,115 @@
 {
   "period": "16 Lug – 16 Ago 2026",
   "gimmick": "Ice-Surging Moon: Quando il personaggio attivo infligge DAN da Cryo agli avversari con Attacchi Caricati, l'attacco scatenerà un'onda d'urto nella posizione dell'avversario che infligge DAN puri. Può attivarsi una volta ogni 3s.",
+  "buff_first": "Il danno da Superconduct aumentato del 200% e il danno da Stellar-Conduct aumentato del 75%.",
+  "buff_second": "Il danno da Electro-Charged aumentato del 200% e il danno da Lunar-Charged aumentato del 75%.",
   "slots": [
     {
-      "slot": 1, 
+      "slot": 1,
       "label": "Piano 12-1 Prima Metà",
       "enemies": [
-        { "id": "Wayob_Bisonsaurus", "level": 95, "hp": 1192502, "quantity": 1 },
-        { "id": "Moonbeast_Electric", "level": 95, "hp": 1737646, "quantity": 1 }
+        {
+          "id": "Wayob_Bisonsaurus",
+          "level": 95,
+          "hp": 1192502,
+          "quantity": 1
+        },
+        {
+          "id": "Moonbeast_Electric",
+          "level": 95,
+          "hp": 1737646,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 2, 
+      "slot": 2,
       "label": "Piano 12-1 Seconda Metà",
       "enemies": [
-        { "id": "WildHunt_Elite", "level": 95, "hp": 1771718, "quantity": 1 },
-        { "id": "Samurai_Ningyo", "level": 95, "hp": 2081163, "quantity": 1 }
+        {
+          "id": "WildHunt_Elite",
+          "level": 95,
+          "hp": 1771718,
+          "quantity": 1
+        },
+        {
+          "id": "Samurai_Ningyo",
+          "level": 95,
+          "hp": 2081163,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 3, 
+      "slot": 3,
       "label": "Piano 12-2 Prima Metà",
       "enemies": [
-        { "id": "Gargoyle", "level": 98, "hp": 1351891, "quantity": 1 },
-        { "id": "Gargoyle_Fafnir", "level": 98, "hp": 3283163, "quantity": 1 }
+        {
+          "id": "Gargoyle",
+          "level": 98,
+          "hp": 1351891,
+          "quantity": 1
+        },
+        {
+          "id": "Gargoyle_Fafnir",
+          "level": 98,
+          "hp": 3283163,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 4, 
+      "slot": 4,
       "label": "Piano 12-2 Seconda Metà",
       "enemies": [
-        { "id": "Fungus_Amanita_Du_Udatta_Rock", "level": 98, "hp": 540756, "quantity": 1 },
-        { "id": "Fungus_Amanita_Du_Anudatta_Water", "level": 98, "hp": 386254, "quantity": 1 },
-        { "id": "Fungus_Raptor", "level": 98, "hp": 2703781, "quantity": 1 }
+        {
+          "id": "Fungus_Amanita_Du_Udatta_Rock",
+          "level": 98,
+          "hp": 540756,
+          "quantity": 1
+        },
+        {
+          "id": "Fungus_Amanita_Du_Anudatta_Water",
+          "level": 98,
+          "hp": 386254,
+          "quantity": 1
+        },
+        {
+          "id": "Fungus_Raptor",
+          "level": 98,
+          "hp": 2703781,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 5, 
+      "slot": 5,
       "label": "Piano 12-3 Prima Metà",
       "enemies": [
-        { "id": "Monitor_02", "level": 100, "hp": 4099188, "quantity": 1 }
+        {
+          "id": "Monitor_02",
+          "level": 100,
+          "hp": 4099188,
+          "quantity": 1
+        }
       ]
     },
     {
-      "slot": 6, 
+      "slot": 6,
       "label": "Piano 12-3 Seconda Metà",
       "enemies": [
-        { "id": "Tribalwarrior_Chainsword_Shamansaurus", "level": 100, "hp": 831900, "quantity": 1 },
-        { "id": "Tenoyollotzin", "level": 100, "hp": 4159501, "quantity": 1 }
+        {
+          "id": "Tribalwarrior_Chainsword_Shamansaurus",
+          "level": 100,
+          "hp": 831900,
+          "quantity": 1
+        },
+        {
+          "id": "Tenoyollotzin",
+          "level": 100,
+          "hp": 4159501,
+          "quantity": 1
+        }
       ]
     }
   ]

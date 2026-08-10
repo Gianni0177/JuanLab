@@ -49,6 +49,26 @@
   line-height: 1.6;
 }
 
+.abyss-buff {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: #8ab4f8;
+  line-height: 1.5;
+}
+
+.buff-half {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pico-muted-color);
+  margin-right: 0.5rem;
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 4px;
+  padding: 1px 5px;
+  vertical-align: middle;
+}
+
 /* ── Row wrapper con header HP totali ──────────────────────────────────── */
 
 .abyss-row {
@@ -180,6 +200,16 @@
 .enemy-hp {
   font-size: 0.68rem;
   color: #d97777;
+  white-space: nowrap;
+}
+
+/* buff per metà campo */
+.slot-buff {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.72rem;
+  color: #8ab4f8;
+  line-height: 1.45;
+  font-style: italic;
 }
 
 /* ── Badge quantità (sinistra assoluta) ────────────────────────────────── */
