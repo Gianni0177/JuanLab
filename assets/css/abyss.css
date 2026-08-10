@@ -24,12 +24,67 @@
   font-style: italic;
 }
 
-/* ── Griglia principale 2 colonne × 3 righe ────────────────────────────── */
+/* ── Meta: periodo e gimmick ───────────────────────────────────────────── */
 
-.abyss-grid {
+.abyss-meta {
+  margin-bottom: 1.8rem;
+}
+
+.abyss-period {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pico-muted-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 0.6rem;
+}
+
+.abyss-gimmick {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--pico-color);
+  line-height: 1.6;
+}
+
+/* ── Row wrapper con header HP totali ──────────────────────────────────── */
+
+.abyss-row {
+  margin-bottom: 1.5rem;
+}
+
+.row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.row-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--pico-muted-color);
+}
+
+.row-hp {
+  font-size: 0.75rem;
+  color: #d97777;
+}
+
+.row-slots {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+/* ── Griglia principale 2 colonne × 3 righe ────────────────────────────── */
+
+.abyss-grid {
   margin-bottom: 3rem;
 }
 

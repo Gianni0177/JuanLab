@@ -1,42 +1,54 @@
-[
-  {
-    "slot": 1, "label": "Camera 1 — Prima Metà",
-    "enemies": [
-      { "id": "Chimera_BearDeer",    "level": 90, "hp": 182000, "quantity": 2 },
-      { "id": "Chimera_Manticore",   "level": 90, "hp": 195000, "quantity": 1, "info": ["Resiste al Fuoco", "Usa Cryo per rallentarlo"] }
-    ]
-  },
-  {
-    "slot": 2, "label": "Camera 1 — Seconda Metà",
-    "enemies": [
-      { "id": "Fungus_Raptor",       "level": 90, "hp": 143000, "quantity": 3 }
-    ]
-  },
-  {
-    "slot": 3, "label": "Camera 2 — Prima Metà",
-    "enemies": [
-      { "id": "Gargoyle",            "level": 92, "hp": 310000, "quantity": 1, "info": ["Attacca in picchiata", "Vulnerabile a Electro"] },
-      { "id": "Gargoyle_Fafnir",     "level": 92, "hp": 420000, "quantity": 1, "info": ["Versione elite del Gargoyle", "Priorità assoluta"] }
-    ]
-  },
-  {
-    "slot": 4, "label": "Camera 2 — Seconda Metà",
-    "enemies": [
-      { "id": "MachinaIustitia_Excavator",  "level": 92, "hp": 560000, "quantity": 1 },
-      { "id": "MachinaIustitia_Nutcracker", "level": 92, "hp": 490000, "quantity": 1, "info": ["Attacca con esplosioni AoE", "Rimani in movimento"] }
-    ]
-  },
-  {
-    "slot": 5, "label": "Camera 3 — Prima Metà",
-    "enemies": [
-      { "id": "WildHunt_Elite",      "level": 95, "hp": 780000, "quantity": 1, "info": ["Invoca rinforzi al 50% HP", "Interrompi il cast con CC"] }
-    ]
-  },
-  {
-    "slot": 6, "label": "Camera 3 — Seconda Metà",
-    "enemies": [
-      { "id": "Wayob_Bisonsaurus",   "level": 95, "hp": 920000, "quantity": 1, "info": ["Carica quando sotto il 30% HP", "Usa scudi per assorbire la carica"] },
-      { "id": "Tenoyollotzin",       "level": 95, "hp": 650000, "quantity": 1 }
-    ]
-  }
-]
+{
+  "period": "16 Lug – 16 Ago 2026",
+  "gimmick": "Ice-Surging Moon: Quando il personaggio attivo infligge DAN da Cryo agli avversari con Attacchi Caricati, l'attacco scatenerà un'onda d'urto nella posizione dell'avversario che infligge DAN puri. Può attivarsi una volta ogni 3s.",
+  "slots": [
+    {
+      "slot": 1, 
+      "label": "Piano 12-1 Prima Metà",
+      "enemies": [
+        { "id": "Thundering Wayob Manifestation", "level": 95, "hp": 1192502, "quantity": 1 },
+        { "id": "Gleaming Charge: Frostnight Scion", "level": 95, "hp": 1737646, "quantity": 1 }
+      ]
+    },
+    {
+      "slot": 2, 
+      "label": "Piano 12-1 Seconda Metà",
+      "enemies": [
+        { "id": "Wilderness Hunter", "level": 95, "hp": 1771718, "quantity": 1 },
+        { "id": "Maguu Kenki", "level": 95, "hp": 2081163, "quantity": 1 }
+      ]
+    },
+    {
+      "slot": 3, 
+      "label": "Piano 12-2 Prima Metà",
+      "enemies": [
+        { "id": "Ruin Drake: Earthguard", "level": 98, "hp": 1351891, "quantity": 1 },
+        { "id": "Aeonblight Drake", "level": 98, "hp": 3283163, "quantity": 1 }
+      ]
+    },
+    {
+      "slot": 4, 
+      "label": "Piano 12-2 Seconda Metà",
+      "enemies": [
+        { "id": "Grounded Geoshroom", "level": 98, "hp": 540756, "quantity": 1 },
+        { "id": "Grounded Hydroshroom", "level": 98, "hp": 386254, "quantity": 1 },
+        { "id": "Jadeplume Terrorshroom", "level": 98, "hp": 2703781, "quantity": 1 }
+      ]
+    },
+    {
+      "slot": 5, 
+      "label": "Piano 12-3 Prima Metà",
+      "enemies": [
+        { "id": "Battle-Hardened Precursor's Secret Source Matrix of Overseer Network", "level": 100, "hp": 4099188, "quantity": 1 }
+      ]
+    },
+    {
+      "slot": 6, 
+      "label": "Piano 12-3 Seconda Metà",
+      "enemies": [
+        { "id": "Iktomisaurus Warrior: Icy Tidebearer", "level": 100, "hp": 831900, "quantity": 1 },
+        { "id": "Battle-Hardened Pipilpan Idol", "level": 100, "hp": 4159501, "quantity": 1 }
+      ]
+    }
+  ]
+}
