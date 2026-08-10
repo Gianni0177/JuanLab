@@ -82,14 +82,16 @@
   function render(data) {
     // sezione gimmick / periodo
     if (meta) {
-      const buffRows = [
-        data.buff_first  ? `<div class="abyss-buff"><span class="buff-half">Prima Metà</span>${data.buff_first}</div>`  : '',
-        data.buff_second ? `<div class="abyss-buff"><span class="buff-half">Seconda Metà</span>${data.buff_second}</div>` : '',
-      ].join('');
+      const makeBuff = (label, text) => text
+        ? `<div class="abyss-buff"><span class="buff-half">${label}</span>${text}</div>`
+        : '';
+      const totalAll = totalHp(data.slots ?? []).toLocaleString('it-IT');
       meta.innerHTML = `
         <div class="abyss-period">${data.period ?? ''}</div>
-        <p class="abyss-gimmick">${data.gimmick ?? ''}</p>
-        ${buffRows}`;
+        ${makeBuff('Buff stagionale', data.gimmick)}
+        ${makeBuff('Prima met\u00e0', data.buff_first)}
+        ${makeBuff('Seconda met\u00e0', data.buff_second)}
+        <div class="abyss-total">HP totali Abyss: <strong>${totalAll}</strong></div>`;
     }
 
     // griglia: raggruppa slot a coppie (Camera 1, 2, 3)
@@ -134,21 +136,30 @@
   // download griglia come PNG
   document.getElementById('btn-download')?.addEventListener('click', async () => {
     const btn = document.getElementById('btn-download');
+    const stars = document.getElementById('stars');
     btn.disabled = true;
     btn.textContent = 'Generazione...';
-    const target = document.querySelector('main.container');
-    const canvas = await html2canvas(target, {
-      backgroundColor: '#060810',
-      scale: 2,
-      useCORS: true,
-      ignoreElements: el => el.id === 'stars' || el.id === 'btn-download',
-    });
-    const link = document.createElement('a');
-    link.download = 'spyral-abyss.png';
-    link.href = canvas.toDataURL('image/png');
-    link.click();
-    btn.disabled = false;
-    btn.textContent = '\u2193 Scarica immagine';
+    // nasconde il canvas stelle durante la cattura
+    stars.style.display = 'none';
+    try {
+      const canvas = await html2canvas(document.querySelector('main.container'), {
+        backgroundColor: '#060810',
+        scale: 2,
+        useCORS: true,
+        logging: false,
+      });
+      const link = document.createElement('a');
+      link.download = 'spyral-abyss.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } catch (err) {
+      console.error('Download fallito:', err);
+      alert('Download non riuscito. Apri la pagina via Live Server o GitHub Pages.');
+    } finally {
+      stars.style.display = '';
+      btn.disabled = false;
+      btn.textContent = '\u2193 Scarica immagine';
+    }
   });
 }());
 

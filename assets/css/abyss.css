@@ -1,3 +1,11 @@
+.abyss-total {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #d97777;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--pico-muted-border-color);
+}
+
 /* ── Toggle Corrente / Prossimo ────────────────────────────────────────── */
 
 .abyss-toggle {
@@ -42,31 +50,25 @@
   margin-bottom: 0.6rem;
 }
 
-.abyss-gimmick {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--pico-color);
-  line-height: 1.6;
-}
-
 .abyss-buff {
-  margin-top: 0.4rem;
-  font-size: 0.82rem;
-  color: #8ab4f8;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--pico-color);
   line-height: 1.5;
 }
 
 .buff-half {
-  display: inline-block;
-  font-size: 0.68rem;
+  flex-shrink: 0;
+  font-size: 0.66rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--pico-muted-color);
-  margin-right: 0.5rem;
   border: 1px solid var(--pico-muted-border-color);
   border-radius: 4px;
-  padding: 1px 5px;
-  vertical-align: middle;
+  padding: 1px 6px;
 }
 
 /* ── Row wrapper con header HP totali ──────────────────────────────────── */
