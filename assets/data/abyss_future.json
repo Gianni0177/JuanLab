@@ -6,48 +6,48 @@
       "slot": 1, 
       "label": "Piano 12-1 Prima Metà",
       "enemies": [
-        { "id": "Ruin Cruiser", "level": 95, "hp": 511072, "quantity": 1 },
-        { "id": "Ruin Scout", "level": 95, "hp": 715501, "quantity": 1 },
-        { "id": "Perpetual Mechanical Array", "level": 95, "hp": 2725720, "quantity": 1 }
+        { "id": "Apparatus_Enigma_BionicDrone", "level": 95, "hp": 511072, "quantity": 1 },
+        { "id": "Apparatus_Enigma_BionicNettler", "level": 95, "hp": 715501, "quantity": 1 },
+        { "id": "Apparatus_Perpetual", "level": 95, "hp": 2725720, "quantity": 1 }
       ]
     },
     {
       "slot": 2, 
       "label": "Piano 12-1 Seconda Metà",
       "enemies": [
-        { "id": "Construction Specialist Mek - Pneuma", "level": 95, "hp": 1192502, "quantity": 1 },
-        { "id": "Icewind Suite: Nemesis of Coppelius", "level": 95, "hp": 2555362, "quantity": 1 }
+        { "id": "MachinaIustitia_Excavator", "level": 95, "hp": 1192502, "quantity": 1 },
+        { "id": "MachinaIustitia_Nutcracker", "level": 95, "hp": 2555362, "quantity": 1 }
       ]
     },
     {
       "slot": 3, 
       "label": "Piano 12-2 Prima Metà",
       "enemies": [
-        { "id": "Chimeric Horned Bear", "level": 98, "hp": 1545018, "quantity": 1 },
-        { "id": "Chimeric Winged Lion", "level": 98, "hp": 1429994, "quantity": 1 }
+        { "id": "Chimera_BearDeer", "level": 98, "hp": 1545018, "quantity": 1 },
+        { "id": "Chimera_Manticore", "level": 98, "hp": 1429994, "quantity": 1 }
       ]
     },
     {
       "slot": 4, 
       "label": "Piano 12-2 Seconda Metà",
       "enemies": [
-        { "id": "Cryo Abyss Mage", "level": 98, "hp": 229937, "quantity": 1 },
-        { "id": "Iniquitous Baptist - Invoker of Fire, Frost, and Fulmination", "level": 98, "hp": 1931272, "quantity": 1 }
+        { "id": "Abyss_Ice_01", "level": 98, "hp": 229937, "quantity": 1 },
+        { "id": "Invoker_Archdeacon", "level": 98, "hp": 1931272, "quantity": 1 }
       ]
     },
     {
       "slot": 5, 
       "label": "Piano 12-3 Prima Metà",
       "enemies": [
-        { "id": "Battle-Hardened Chimeric Volkodlak Archer", "level": 100, "hp": 5334976, "quantity": 1 }
+        { "id": "Volkodlak_Greyhound_Furiosa", "level": 100, "hp": 5334976, "quantity": 1 }
       ]
     },
     {
       "slot": 6, 
       "label": "Piano 12-3 Seconda Metà",
       "enemies": [
-        { "id": "Secret Source Automaton: Hunter-Seeker", "level": 100, "hp": 1455825, "quantity": 1 },
-        { "id": "Gluttonous Yumkasaur Mountain King", "level": 100, "hp": 5615327, "quantity": 1 }
+        { "id": "ToothTrap", "level": 100, "hp": 1455825, "quantity": 1 },
+        { "id": "Natsaurus_Hookwalker_Primo", "level": 100, "hp": 5615327, "quantity": 1 }
       ]
     }
   ]
