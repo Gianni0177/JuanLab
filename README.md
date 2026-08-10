@@ -10,24 +10,29 @@ Sito personale pubblicato su **GitHub Pages** — dark theme, stelle cadenti, e 
 
 ```
 JuanLab/
-├── index.html              # Home
-├── abyss.html              # Spyral Abyss tracker
-├── favicon.png
+├── index.html                  # Home page
+├── abyss.html                  # Pagina dello Spyral Abyss
+├── README.md                   # Documentazione del progetto
+├── favicon.png                 # Icona del sito
 ├── assets/
 │   ├── css/
-│   │   ├── style.css       # Tema globale (override Pico CSS)
-│   │   └── abyss.css       # Stili pagina Abyss
-│   ├── js/
-│   │   ├── main.js         # Animazione stelle canvas
-│   │   └── abyss.js        # Logica griglia Abyss
+│   │   ├── abyss.css           # Stili della pagina Abyss
+│   │   └── style.css           # Stili generali del sito
+│   ├── data/
+│   │   ├── enemies.json        # Dizionario dei nemici
+│   │   └── abyss/
+│   │       ├── index.json      # Elenco dei periodi disponibili
+│   │       ├── 2026-07-16.json # Dati Abyss di un periodo
+│   │       └── 2026-08-16.json # Dati Abyss di un altro periodo
 │   ├── img/
-│   │   ├── enemies/        # Icone nemici (.webp)
-│   │   └── ...
-│   └── data/
-│       ├── enemies.json    # Dizionario nemici (id → nome + immagine)
-│       ├── abyss_now.json  # Floor corrente
-│       └── abyss_future.json # Floor prossima
-└── docker-compose.yml      # Server locale nginx
+│   │   ├── enemies/            # Icone dei nemici
+│   │   ├── memes/              # Immagini meme / extra
+│   │   ├── pg/                 # Immagini di background / pagine
+│   │   ├── favicon.png         # Icona locale
+│   │   └── hero.png            # Immagine hero
+│   └── js/
+│       ├── abyss.js            # Logica della griglia Abyss
+│       └── main.js             # Animazioni e script globali
 ```
 
 ---
@@ -48,11 +53,13 @@ python -m http.server 8080
 
 ## Aggiornare l'Abyss
 
-Modifica `assets/data/abyss_now.json` o `abyss_future.json`:
+Aggiungi o modifica un file JSON nella cartella `assets/data/abyss/`, ad esempio `2026-08-16.json`, e assicurati che sia referenziato anche in `assets/data/abyss/index.json`.
+
+Schema base:
 
 ```jsonc
 {
-  "period": "1 Ago – 15 Ago 2026",
+  "period": "16 Ago – 16 Set 2026",
   "gimmick": "Descrizione del buff globale...",
   "buff_first": "Buff Prima Metà...",
   "buff_second": "Buff Seconda Metà...",
@@ -61,15 +68,14 @@ Modifica `assets/data/abyss_now.json` o `abyss_future.json`:
       "slot": 1,
       "label": "Piano 12-1 Prima Metà",
       "enemies": [
-        { "id": "Wayob_Bisonsaurus", "level": 95, "hp": 1192502, "quantity": 1, "info": ["tip"] }
+        { "id": "NomeNemico", "level": 95, "hp": 1192502, "quantity": 1 }
       ]
     }
-    // ... 5 slot restanti
   ]
 }
 ```
 
-L'`id` corrisponde al filename in `assets/img/enemies/` senza prefisso `UI_MonsterIcon_` e senza estensione.
+L'`id` corrisponde al nome del file presente in `assets/img/enemies/`, senza prefisso o estensione.
 
 ---
 
