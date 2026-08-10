@@ -82,17 +82,17 @@
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Electric.webp",
     "name": "Electro Hypostasis",
-    "info": [""] 
+    "info": ["Scappa per evitare i suoi colpi”, “quando mostra il core menalo come se non ci fosse un domani"] 
   },
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Wind.webp",
     "name": "Anemo Hypostasis",
-    "info": [""] 
+    "info": ["Menalo quando mostra il core”, “Quando si formano le correnti d’aria raccogli tutte le particelle e poi dagli la mazzata finale”, “Kazuha consigliatissimo"] 
   },
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Rock.webp",
     "name": "Geo Hypostasis",
-    "info": [""] 
+    "info": ["Menalo quando mostra il core”, “Quando tira su i costrutti geo abbattili con un personaggio dello stesso elemento o con Eula. Really."] 
   },
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Water.webp",
@@ -102,7 +102,7 @@
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Ice.webp",
     "name": "Cryo Hypostasis",
-    "info": [""] 
+    "info": ["Freeza e abbatti tutti i mostrini d’acqua che lo curano”, “Ayaka aiuta tantissimo"] 
   },
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Effigy_Fire.webp",
@@ -117,7 +117,7 @@
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Oceanid.webp",
     "name": "Oceanid",
-    "info": [""] 
+    "info": ["Portati un arco per tirare giù i maledetti uccelli"] 
   },
   {
     "image_path": "assets/img/enemies/UI_MonsterIcon_Necalevia_Normal.webp",
