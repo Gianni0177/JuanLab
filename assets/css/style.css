@@ -1,0 +1,87 @@
+/* Override minimi su Pico CSS — tutto il resto è gestito dal framework */
+
+/* sfondo scuro sull'html come fallback; body trasparente per mostrare il canvas */
+html {
+  background: #060810;
+}
+
+[data-theme="dark"] {
+  --pico-background-color: transparent;
+  --pico-card-background-color: transparent;
+}
+
+main.container {
+  padding-top: 8vh;
+  padding-bottom: 4rem;
+}
+
+main > header {
+  margin-bottom: 3rem;
+}
+
+footer.container {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pico-muted-border-color);
+}
+
+/* sfondo glass per le card */
+article {
+  aspect-ratio: 1;
+  background-color: rgba(8, 12, 28, 0.55) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* path relativi a assets/css/ — modifica qui per cambiare sfondo di ogni card */
+.card-1 { background-image: linear-gradient(rgba(8,12,28,.62),rgba(8,12,28,.62)), url('../img/memes/card1.jpeg') !important; }
+.card-2 { background-image: linear-gradient(rgba(8,12,28,.62),rgba(8,12,28,.62)), url('../img/memes/card2.jpeg') !important; }
+.card-3 { background-image: linear-gradient(rgba(8,12,28,.62),rgba(8,12,28,.62)), url('../img/memes/card3.jpeg') !important; }
+
+#stars {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* blocco grigio di fallback quando hero.png non è ancora presente */
+.hero-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  flex-shrink: 0;
+}
+
+.hero-divider {
+  width: 1px;
+  height: 44px;
+  background: var(--pico-muted-border-color);
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main > header,
+.grid {
+  animation: fadeInUp 600ms ease-out both;
+}

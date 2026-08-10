@@ -1,46 +1,48 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JuanLab | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <title>JuanLab</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="bg-shape bg-shape-1"></div>
-  <div class="bg-shape bg-shape-2"></div>
+  <canvas id="stars"></canvas>
+  <main class="container">
+    <header>
+      <div class="hero-brand">
+        <!-- hero.png: immagine/logo 80×80 px in assets/img/ -->
+        <img class="hero-img" src="assets/img/hero.png" alt="JuanLab logo" />
+        <div class="hero-divider"></div>
+        <strong class="hero-title">JuanLab</strong>
+      </div>
+      <p>Pagina vuota per ora LMFAO.</p>
+      <a href="https://github.com/Gianni0177" target="_blank" rel="noreferrer" role="button" class="outline">GitHub &rarr;</a>
+    </header>
 
-  <header class="hero">
-    <p class="tag">GitHub Pages</p>
-    <h1>Ciao, questa e la tua nuova pagina.</h1>
-    <p class="subtitle">
-      Un punto di partenza elegante per presentarti, raccogliere progetti e condividere il tuo lavoro online.
-    </p>
-    <a class="cta" href="https://github.com" target="_blank" rel="noreferrer">Apri GitHub</a>
-  </header>
-
-  <main class="grid">
-    <section class="card">
-      <h2>Chi sei</h2>
-      <p>Sostituisci questo testo con una tua breve bio: cosa fai, cosa ti interessa, su cosa stai lavorando.</p>
-    </section>
-
-    <section class="card">
-      <h2>Progetti</h2>
-      <p>Aggiungi link ai tuoi repository principali, demo o articoli tecnici.</p>
-    </section>
-
-    <section class="card">
-      <h2>Contatti</h2>
-      <p>Inserisci qui email, LinkedIn o altri canali per essere contattato facilmente.</p>
-    </section>
+    <div class="grid">
+      <!-- per cambiare sfondo modifica le classi card-1/2/3 in assets/css/style.css -->
+      <article class="card-1">
+        <h3>Cosa ci faccio qui</h3>
+        <p>Bho userò sta page per postare robe varie.</p>
+      </article>
+      <article class="card-2">
+        <h3>Progetti</h3>
+        <p>Per ora nulla di complesso probabilmente abyss e cazzate varie</p>
+      </article>
+      <article class="card-3">
+        <h3>Contatti</h3>
+        <p>Email: gianni.nacu.4055@gmail.com,<br/>Discord: Gianni#0177 (@gx0177)</p>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <p>Creato con HTML e CSS, pubblicato su GitHub Pages.</p>
+  <footer class="container">
+    <small>JuanLab &mdash; GitHub Pages</small>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
