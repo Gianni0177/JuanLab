@@ -1,0 +1,8 @@
+[
+  { "slot": 1, "label": "Camera 1 — Prima Metà",    "enemies": [] },
+  { "slot": 2, "label": "Camera 1 — Seconda Metà",  "enemies": [] },
+  { "slot": 3, "label": "Camera 2 — Prima Metà",    "enemies": [] },
+  { "slot": 4, "label": "Camera 2 — Seconda Metà",  "enemies": [] },
+  { "slot": 5, "label": "Camera 3 — Prima Metà",    "enemies": [] },
+  { "slot": 6, "label": "Camera 3 — Seconda Metà",  "enemies": [] }
+]

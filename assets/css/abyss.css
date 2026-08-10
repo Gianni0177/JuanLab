@@ -1,3 +1,29 @@
+/* ── Toggle Corrente / Prossimo ────────────────────────────────────────── */
+
+.abyss-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.abyss-toggle button {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.abyss-toggle button[aria-current] {
+  background: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-color: var(--pico-primary-border);
+}
+
+.slot-empty {
+  font-size: 0.78rem;
+  color: var(--pico-muted-color);
+  font-style: italic;
+}
+
 /* ── Griglia principale 2 colonne × 3 righe ────────────────────────────── */
 
 .abyss-grid {
