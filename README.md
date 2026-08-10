@@ -34,12 +34,6 @@ JuanLab/
 
 ## Avvio locale
 
-**Con Docker** (consigliato):
-```bash
-docker compose up
-# → http://localhost:8080
-```
-
 **Con Live Server** (VS Code): tasto destro su `index.html` → *Open with Live Server*
 
 **Con Python**:
