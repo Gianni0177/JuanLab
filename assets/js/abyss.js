@@ -135,14 +135,19 @@
 
   // download griglia come PNG
   document.getElementById('btn-download')?.addEventListener('click', async () => {
-    const btn = document.getElementById('btn-download');
-    const stars = document.getElementById('stars');
+    const btn     = document.getElementById('btn-download');
+    const stars   = document.getElementById('stars');
+    const toggle  = document.querySelector('.abyss-toggle');
+    const target  = document.querySelector('main.container');
+
     btn.disabled = true;
     btn.textContent = 'Generazione...';
-    // nasconde il canvas stelle durante la cattura
-    stars.style.display = 'none';
+    stars.style.display  = 'none';
+    toggle.style.display = 'none';
+    target.style.padding = '2rem 3rem';
+
     try {
-      const canvas = await html2canvas(document.querySelector('main.container'), {
+      const canvas = await html2canvas(target, {
         backgroundColor: '#060810',
         scale: 2,
         useCORS: true,
@@ -156,7 +161,9 @@
       console.error('Download fallito:', err);
       alert('Download non riuscito. Apri la pagina via Live Server o GitHub Pages.');
     } finally {
-      stars.style.display = '';
+      stars.style.display  = '';
+      toggle.style.display = '';
+      target.style.padding = '';
       btn.disabled = false;
       btn.textContent = '\u2193 Scarica immagine';
     }
