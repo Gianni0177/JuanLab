@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spyral Abyss | JuanLab</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/abyss.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <main class="container">
+    <header>
+      <div class="hero-brand">
+        <a href="index.html" class="back-link">← JuanLab</a>
+        <div class="hero-divider"></div>
+        <strong class="hero-title">Spyral Abyss</strong>
+      </div>
+    </header>
+
+    <!-- slot popolati dinamicamente da abyss.js -->
+    <div id="abyss-grid" class="abyss-grid"></div>
+  </main>
+
+  <footer class="container">
+    <small>JuanLab &mdash; GitHub Pages</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/abyss.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* ── Griglia principale 2 colonne × 3 righe ────────────────────────────── */
+
+.abyss-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ── Slot (glass card) ─────────────────────────────────────────────────── */
+
+.abyss-slot {
+  background: rgba(8, 12, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 0 18px rgba(80, 130, 255, 0.06);
+  padding: 1rem 1.1rem 1.1rem;
+  min-height: 140px;
+}
+
+.slot-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pico-muted-color);
+  margin: 0 0 0.8rem;
+}
+
+.slot-enemies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ── Enemy card ────────────────────────────────────────────────────────── */
+
+.enemy-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  /* padding laterale per badge qty e info */
+  padding: 0 18px;
+  width: 116px;
+}
+
+.enemy-level {
+  font-size: 0.68rem;
+  color: var(--pico-muted-color);
+  letter-spacing: 0.04em;
+}
+
+/* ── Immagine + tooltip nome ───────────────────────────────────────────── */
+
+.enemy-img-wrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.enemy-img-wrap img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* placeholder se l'immagine manca */
+  background: rgba(20, 25, 50, 0.6);
+  display: block;
+}
+
+.tooltip-name {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(8, 12, 28, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e8e8e8;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms;
+  z-index: 10;
+}
+
+.enemy-img-wrap:hover .tooltip-name {
+  opacity: 1;
+}
+
+/* ── HP ────────────────────────────────────────────────────────────────── */
+
+.enemy-hp {
+  font-size: 0.68rem;
+  color: #d97777;
+}
+
+/* ── Badge quantità (sinistra assoluta) ────────────────────────────────── */
+
+.enemy-qty {
+  position: absolute;
+  left: 0;
+  /* verticalmente centrato sull'immagine (level ~16px + gap 3px → ~19px) */
+  top: 19px;
+  background: rgba(15, 20, 50, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+/* ── Info icon + tooltip strategie (destra assoluta) ──────────────────── */
+
+.enemy-info {
+  position: absolute;
+  right: 0;
+  top: 19px;
+  cursor: default;
+  font-size: 0.8rem;
+  color: rgba(140, 180, 255, 0.75);
+  line-height: 1;
+}
+
+.tooltip-info {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 8px);
+  background: rgba(8, 12, 28, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  min-width: 170px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms;
+  z-index: 20;
+}
+
+.tooltip-info ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.tooltip-info li + li {
+  margin-top: 3px;
+}
+
+.enemy-info:hover .tooltip-info {
+  opacity: 1;
+}
+
+/* ── Errore caricamento ────────────────────────────────────────────────── */
+
+.abyss-error {
+  color: var(--pico-muted-color);
+  font-size: 0.9rem;
+  grid-column: 1 / -1;
+}
+
+/* ── Back link ─────────────────────────────────────────────────────────── */
+
+.back-link {
+  font-size: 0.85rem;
+  color: var(--pico-muted-color);
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.back-link:hover {
+  color: var(--pico-color);
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .abyss-grid {
+    grid-template-columns: 1fr;
+  }
+}
