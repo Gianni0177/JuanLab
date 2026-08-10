@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>JuanLab</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260810-3" />
 </head>
 <body>
   <canvas id="stars"></canvas>
@@ -18,12 +21,25 @@
         <div class="hero-divider"></div>
         <strong class="hero-title">JuanLab</strong>
       </div>
-      <p>Pagina vuota per ora LMFAO.</p>
+      <p>Un piccolo spazio personale per sperimentare, documentare e condividere.</p>
       <div class="hero-actions">
         <a href="https://github.com/Gianni0177" target="_blank" rel="noreferrer" role="button" class="outline">GitHub &rarr;</a>
         <a href="abyss.html" role="button" class="outline">Spyral Abyss &rarr;</a>
       </div>
     </header>
+
+    <section class="readme-panel" id="changelog-panel">
+      <div class="readme-panel__header">
+        <div>
+          <p class="readme-panel__eyebrow">Changelog</p>
+          <h2>Ultimi aggiornamenti</h2>
+        </div>
+        <button type="button" class="readme-toggle" id="changelog-toggle" aria-expanded="false">Mostra</button>
+      </div>
+      <div id="changelog-content" class="readme-content" aria-live="polite" hidden>
+        <p>Sto caricando gli ultimi commit...</p>
+      </div>
+    </section>
 
     <div class="grid">
       <!-- per cambiare sfondo modifica le classi card-1/2/3 in assets/css/style.css -->
@@ -46,6 +62,6 @@
     <small>JuanLab &mdash; GitHub Pages</small>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home.js"></script>
 </body>
 </html>

@@ -1,23 +1,18 @@
-// punto di ingresso JS — aggiunta logica qui
-
 (function () {
   const canvas = document.getElementById('stars');
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
   const changelogContent = document.getElementById('changelog-content');
-
-  let W, H, stars, meteors;
-
-  // ── Setup ────────────────────────────────────────────────────────────
+  const changelogToggle = document.getElementById('changelog-toggle');
+  let W = 0;
+  let H = 0;
+  let stars = [];
+  let meteors = [];
 
   function resize() {
     W = canvas.width = window.innerWidth;
     H = canvas.height = window.innerHeight;
-    buildStars();
-  }
-
-  function buildStars() {
     stars = Array.from({ length: 180 }, () => ({
       x: Math.random() * W,
       y: Math.random() * H,
@@ -27,14 +22,12 @@
   }
 
   function makeMeteor() {
-    // nasce sul bordo superiore o destro
     const fromTop = Math.random() < 0.6;
     return {
       x: fromTop ? Math.random() * W * 1.4 : W + 10,
       y: fromTop ? -10 : Math.random() * H * 0.4,
       len: Math.random() * 180 + 80,
       spd: Math.random() * 5 + 4,
-      // angolo tra 20° e 50° sotto l'orizzontale
       ang: (Math.random() * 30 + 20) * (Math.PI / 180),
       life: 1,
       fade: Math.random() * 0.01 + 0.008,
@@ -58,9 +51,8 @@
 
   function renderChangelog(commits) {
     if (!changelogContent) return;
-
     changelogContent.innerHTML = `
-      <article class="readme-card">
+      <div class="readme-card">
         <ul>
           ${commits.map((commit) => {
             const message = (commit.commit?.message || commit.message || '').split('\n')[0];
@@ -75,13 +67,20 @@
             `;
           }).join('')}
         </ul>
-      </article>
+        <a class="changelog-link" href="https://github.com/Gianni0177/JuanLab/commits/main" target="_blank" rel="noreferrer">Vedi tutti</a>
+      </div>
     `;
   }
 
-  async function loadChangelog() {
-    if (!changelogContent) return;
+  function toggleChangelog() {
+    if (!changelogContent || !changelogToggle) return;
+    const isExpanded = changelogContent.hidden === false;
+    changelogContent.hidden = isExpanded;
+    changelogToggle.setAttribute('aria-expanded', String(!isExpanded));
+    changelogToggle.textContent = isExpanded ? 'Mostra' : 'Nascondi';
+  }
 
+  async function loadChangelog() {
     const fallbackCommits = [
       { sha: '2ce3040', date: '2026-08-10T00:00:00Z', commit: { message: 'update readme', author: { date: '2026-08-10T00:00:00Z' } } },
       { sha: 'cfe632c', date: '2026-08-10T00:00:00Z', commit: { message: 'Added tips', author: { date: '2026-08-10T00:00:00Z' } } },
@@ -103,12 +102,8 @@
     }
   }
 
-  // ── Loop ─────────────────────────────────────────────────────────────
-
   function draw() {
     ctx.clearRect(0, 0, W, H);
-
-    // stelle statiche
     for (const s of stars) {
       ctx.beginPath();
       ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
@@ -116,43 +111,36 @@
       ctx.fill();
     }
 
-    // meteore
     for (let i = meteors.length - 1; i >= 0; i--) {
       const m = meteors[i];
       const dx = Math.cos(m.ang) * m.len;
       const dy = Math.sin(m.ang) * m.len;
-
       const grad = ctx.createLinearGradient(m.x, m.y, m.x - dx, m.y - dy);
       grad.addColorStop(0, `rgba(255,255,255,${m.life})`);
       grad.addColorStop(1, 'rgba(255,255,255,0)');
-
       ctx.beginPath();
       ctx.moveTo(m.x, m.y);
       ctx.lineTo(m.x - dx, m.y - dy);
       ctx.strokeStyle = grad;
       ctx.lineWidth = 1.5;
       ctx.stroke();
-
       m.x += Math.cos(m.ang) * m.spd;
       m.y += Math.sin(m.ang) * m.spd;
       m.life -= m.fade;
-
       if (m.life <= 0 || m.x > W + 200 || m.y > H + 200) {
         meteors.splice(i, 1);
       }
     }
 
-    // spawn casuale
     if (Math.random() < 0.012) meteors.push(makeMeteor());
-
     requestAnimationFrame(draw);
   }
 
-  // ── Init ─────────────────────────────────────────────────────────────
-
-  meteors = [];
   resize();
   window.addEventListener('resize', resize);
+  if (changelogToggle) {
+    changelogToggle.addEventListener('click', toggleChangelog);
+  }
   loadChangelog();
   draw();
 }());
