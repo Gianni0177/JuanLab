@@ -37,7 +37,7 @@
   for (const e of enemyList) {
     const filename = e.image_path.split('/').pop();
     const id = filename.replace('UI_MonsterIcon_', '').replace(/\.\w+$/, '');
-    lookup[id] = { image_path: e.image_path, name: e.name };
+    lookup[id] = { image_path: e.image_path, name: e.name, info: e.info ?? [] };
   }
 
   function totalHp(slots) {
@@ -71,10 +71,12 @@
     }
 
     for (const e of enemies) {
-      const m    = lookup[e.id] ?? { image_path: '', name: e.id };
+      const m    = lookup[e.id] ?? { image_path: '', name: e.id, info: [] };
       const hp   = (e.hp ?? 0).toLocaleString('it-IT');
-      const tips = e.info?.length
-        ? `<ul>${e.info.map(t => `<li>${t}</li>`).join('')}</ul>`
+      // info: usa quello del lookup (enemies.json), con fallback all'override nello slot
+      const infoList = (Array.isArray(e.info) && e.info.length) ? e.info : (Array.isArray(m.info) ? m.info : []);
+      const tips = infoList.length
+        ? `<ul>${infoList.map(t => `<li>${t}</li>`).join('')}</ul>`
         : '<em style="color:#555">Nessun consiglio</em>';
 
       const card = document.createElement('div');
