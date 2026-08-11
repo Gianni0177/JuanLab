@@ -27,7 +27,7 @@ JuanLab/
 │   ├── img/
 │   │   ├── enemies/            # Icone dei nemici
 │   │   ├── memes/              # Immagini meme / extra
-│   │   ├── pg/                 # Immagini di background / pagine
+│   │   ├── pg/                 # Immagini dei personaggi
 │   │   ├── favicon.png         # Icona locale
 │   │   └── hero.png            # Immagine hero
 │   └── js/
