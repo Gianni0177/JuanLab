@@ -280,7 +280,7 @@
           <h3 class="card-title">Strategie</h3>
           <span class="card-sub">Indicazioni rapide per il periodo corrente</span>
         </div>
-        <p class="strategies-empty">Nessuna strategia configurata. Aggiungi l'array <strong>strategies</strong> nel file periodo del Theater.</p>
+        <p class="strategies-empty">Nessuna strategia configurata.</p>
       `;
       return;
     }
