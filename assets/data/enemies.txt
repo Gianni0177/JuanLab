@@ -1815,10 +1815,5 @@
     "image_path": "assets/img/enemies/UI_MonsterIcon_Volkodlak_Greyhound_Furiosa.webp",
     "name": "Battle-Hardened Chimeric Volkodlak Archer",
     "info": [""] 
-  },
-  {
-    "image_path": "assets/img/enemies/UI_MonsterIcon_Thoarder_Elder_Standard_Hildegard_01.webp",
-    "name": "Battle-Hardened Elite Treasure Hoarder",
-    "info": [""] 
   }
 ]

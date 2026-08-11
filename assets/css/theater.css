@@ -1,0 +1,694 @@
+.theater-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.theater-toggle button {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.theater-toggle button[aria-current] {
+  background: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-color: var(--pico-primary-border);
+}
+
+.theater-meta {
+  margin-bottom: 1.4rem;
+}
+
+.theater-period {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pico-muted-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 0.6rem;
+}
+
+.theater-buff {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.theater-buff-label {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pico-muted-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-right: 0.5rem;
+}
+
+.theater-countdown {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--pico-muted-color);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+}
+
+.theater-card {
+  background: rgba(8, 12, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 18px rgba(80, 130, 255, 0.06);
+  padding: 1rem 1.1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--pico-muted-color);
+}
+
+.card-sub {
+  font-size: 0.8rem;
+  color: var(--pico-muted-color);
+}
+
+.card-mode-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.stage-mode-pill {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(159, 181, 255, 0.75);
+  background: rgba(110, 140, 255, 0.18);
+  color: #dfe7ff;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.mode-switch-top {
+  margin: 0 0 1rem;
+}
+
+.mode-switch button {
+  padding: 0.25rem 0.65rem;
+  font-size: 0.72rem;
+}
+
+.mode-switch button[aria-current] {
+  background: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-color: var(--pico-primary-border);
+}
+
+.setup-block {
+  margin-bottom: 0.95rem;
+}
+
+.setup-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: #9aa7ff;
+}
+
+.elements-row,
+.character-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.element-pill,
+.char-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(20, 15, 40, 0.45);
+}
+
+.element-pill img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.element-pill span,
+.char-pill span {
+  font-size: 0.78rem;
+}
+
+.char-pill img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.char-pill.guest {
+  background: rgba(24, 17, 36, 0.55);
+}
+
+.setup-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.75rem;
+  color: var(--pico-muted-color);
+}
+
+.strategies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.strategy-item {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(14, 18, 36, 0.55);
+}
+
+.strategy-item h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9fb5ff;
+}
+
+.strategy-item ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.strategy-item li {
+  margin-bottom: 0.34rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.strategies-empty,
+.strategy-empty-item {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--pico-muted-color);
+}
+
+.season-effects {
+  margin-top: 0.8rem;
+}
+
+.season-effects h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.9rem;
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.season-card {
+  margin: 0;
+  padding: 0.45rem 0.55rem;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(17, 13, 30, 0.58);
+}
+
+.season-card strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.78rem;
+}
+
+.season-card p {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.28;
+  color: #ffae42;
+}
+
+.stage-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stage-footer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 0.8rem;
+}
+
+.stage-footer ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.stage-footer li {
+  margin-bottom: 0.32rem;
+  font-size: 0.82rem;
+}
+
+.theater-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  overflow: visible;
+}
+
+.theater-stage-grid.extra {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.65rem;
+  align-items: start;
+  grid-auto-rows: max-content;
+}
+
+/* Layout dedicato solo per Atti extra: header compatto e descrizione piena sotto */
+.theater-stage-grid.extra .stage-description-scroll {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-areas:
+    "thumb heading"
+    "label label"
+    "body body";
+  column-gap: 0.6rem;
+  row-gap: 0.18rem;
+}
+
+.theater-stage-grid.extra .stage-thumb-wrap {
+  grid-area: thumb;
+  float: none;
+  margin: 0.05rem 0 0 0;
+}
+
+.theater-stage-grid.extra .stage-heading-row {
+  grid-area: heading;
+  align-self: start;
+}
+
+.theater-stage-grid.extra .stage-description-label {
+  grid-area: label;
+  clear: none;
+}
+
+.theater-stage-grid.extra .stage-body-lines {
+  grid-area: body;
+  clear: none;
+}
+
+.extra-divider {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.extra-divider span {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pico-muted-color);
+}
+
+.theater-stage-node {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3rem;
+  padding: 0.4rem 0.35rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(9, 13, 30, 0.5);
+}
+
+article.theater-stage-node {
+    aspect-ratio: auto;
+    height: auto; /* Assicura che l'altezza si adatti al contenuto */
+}
+
+article.theater-stage-node {
+    align-self: start; /* Evita lo stretch verticale dettato dal contenitore */
+}
+
+.theater-stage-grid.extra .theater-stage-node {
+  align-self: start;
+  height: auto;
+  min-height: 0;
+}
+
+.theater-stage-node:hover,
+.theater-stage-node:focus-within {
+  z-index: 60;
+}
+
+.theater-stage-node.is-inactive {
+  opacity: 0.35;
+  filter: grayscale(1);
+}
+
+.stage-level {
+  font-size: 0.68rem;
+  color: var(--pico-muted-color);
+}
+
+.stage-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stage-act {
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9fb5ff;
+}
+
+.stage-thumb-wrap {
+  float: left;
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin: 0.05rem 0.6rem 0.35rem 0;
+}
+
+.stage-thumb {
+  width: 88px;
+  height: 88px;
+  margin: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 25, 50, 0.6);
+  display: block;
+}
+
+.stage-heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.stage-name {
+  font-size: 0.84rem;
+  text-align: left;
+  line-height: 1.28;
+  min-height: 0;
+}
+
+.stage-info {
+  position: absolute;
+  right: 0.35rem;
+  top: 1.9rem;
+  font-size: 0.82rem;
+  color: rgba(140, 180, 255, 0.75);
+  cursor: default;
+  line-height: 1;
+  z-index: 9998;
+}
+
+.stage-instructions {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 8px);
+  left: auto;
+  bottom: auto;
+  transform: none;
+  min-width: 170px;
+  max-width: 280px;
+  background: rgba(8, 12, 28, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #ccc;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+  z-index: 9999;
+}
+
+.enemy-tooltip-box {
+  z-index: 9999 !important;
+}
+
+.stage-instructions strong {
+  display: block;
+  margin-bottom: 0.28rem;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9fb5ff;
+}
+
+.stage-instructions ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.stage-instructions li + li {
+  margin-top: 3px;
+}
+
+/* Come in Abyss: nelle colonne di sinistra il tooltip apre verso destra */
+.theater-stage-grid > :nth-child(-n+2) .stage-instructions,
+.theater-stage-grid.extra > :nth-child(1) .stage-instructions {
+  right: auto;
+  left: calc(100% + 8px);
+}
+
+.stage-info:hover .stage-instructions {
+  opacity: 1;
+}
+
+.stage-info:focus-within .stage-instructions {
+  opacity: 1;
+}
+
+.stage-description-scroll {
+  margin-top: 0.2rem;
+  max-height: none;
+  overflow: visible;
+  padding: 0.1rem 0;
+}
+
+.stage-description-scroll.no-scroll {
+  max-height: none;
+  overflow: visible;
+}
+
+.stage-description-scroll p {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: rgba(232, 236, 250, 0.9);
+}
+
+.stage-description-scroll .stage-description-label {
+  clear: both;
+  display: block;
+  margin-top: 0.32rem;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pico-muted-color);
+}
+
+.stage-body-lines {
+  clear: both;
+}
+
+.stage-body-lines p {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: rgba(232, 236, 250, 0.9);
+}
+
+.stage-description-scroll::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1rem;
+}
+
+.rules-grid.compact {
+  margin-top: 1rem;
+}
+
+.rule-list,
+.benefit-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.rule-list li,
+.benefit-list li {
+  margin-bottom: 0.4rem;
+  font-size: 0.86rem;
+}
+
+.beneficiaries {
+  margin-top: 0.7rem;
+}
+
+.beneficiaries-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--pico-muted-color);
+}
+
+.beneficiaries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.beneficiary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  gap: 0.25rem;
+}
+
+.beneficiary img {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.beneficiary span {
+  font-size: 0.64rem;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--pico-muted-color);
+}
+
+.theater-error {
+  color: var(--pico-muted-color);
+  font-size: 0.9rem;
+}
+
+.back-link {
+  font-size: 0.85rem;
+  color: var(--pico-muted-color);
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.back-link:hover {
+  color: var(--pico-color);
+}
+
+@media (max-width: 900px) {
+  .theater-stage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stage-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .theater-toggle {
+    flex-wrap: wrap;
+  }
+
+  .theater-stage-grid,
+  .theater-stage-grid.extra {
+    grid-template-columns: 1fr;
+  }
+
+  .theater-stage-node {
+    align-items: flex-start;
+  }
+
+  .stage-name {
+    min-height: 0;
+    text-align: left;
+  }
+
+  .stage-instructions {
+    position: fixed;
+    top: auto;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85vw;
+    max-width: 320px;
+    z-index: 9999;
+  }
+
+  .stage-description-scroll {
+    max-height: none;
+  }
+}
+
+@media print {
+  .mode-switch-top {
+    display: none !important;
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "period": "Periodo live: 2026-09-01 ~ 2026-10-01",
+  "fixed_buff": "I personaggi di apertura avranno PS max, ATT e DIF aumentano del 20%.",
+  "mechanics": {
+    "recommended_elements": [
+      { "name": "Hydro", "icon": "assets/img/elements/Hydro.webp" },
+      { "name": "Electro", "icon": "assets/img/elements/Electro.webp" },
+      { "name": "Dendro", "icon": "assets/img/elements/Dendro.webp" }
+    ],
+    "opening_characters": [
+      { "name": "Columbina", "image": "assets/img/characters/UI_AvatarIcon_Columbina.webp" },
+      { "name": "Xingqiu", "image": "assets/img/characters/UI_AvatarIcon_Xingqiu.webp" },
+      { "name": "Cyno", "image": "assets/img/characters/UI_AvatarIcon_Cyno.webp" },
+      { "name": "Kuki Shinobu", "image": "assets/img/characters/UI_AvatarIcon_Shinobu.webp" },
+      { "name": "Lauma", "image": "assets/img/characters/UI_AvatarIcon_Lauma.webp" },
+      { "name": "Kaveh", "image": "assets/img/characters/UI_AvatarIcon_Kaveh.webp" }
+    ],
+    "guest_stars": [
+      { "name": "Odette", "image": "assets/img/characters/UI_AvatarIcon_Odette.webp" },
+      { "name": "Sandrone", "image": "assets/img/characters/UI_AvatarIcon_MarionetteNew.webp" },
+      { "name": "Sucrose", "image": "assets/img/characters/UI_AvatarIcon_Sucrose.webp" },
+      { "name": "Nicole", "image": "assets/img/characters/UI_AvatarIcon_Nicole.webp" }
+    ],
+    "season_effect_text": "After the above characters join your party, Max HP, ATK, and DEF are increased by 20%."
+  },
+  "selected_mode": "lunar",
+  "modes": {
+    "lunar": {
+      "conditions": {
+        "level": 100,
+        "rooms": 12,
+        "opening_characters": 6,
+        "characters_available": 28,
+        "characters_with_bonus": 32,
+        "min_level": 70,
+        "boss_acts": 10
+      },
+      "stages": [
+        {
+          "enemy_id": "Fungus_Raptor",
+          "instructions": [
+            "Act 3 · Jadeplume Terrorshroom",
+            "An evolved Fungus. When it is hit by Electro attacks and Catalyze reactions, it will accumulate Activation.",
+            "When it is hit by Pyro attacks, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an Activated state.",
+            "An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted."
+          ]
+        },
+        {
+          "enemy_id": "HermitCrab_Primo",
+          "instructions": [
+            "Act 6 · Emperor of Fire and Iron",
+            "An Armored Crablord that has survived for countless eons and surpassed almost all other Fontemer Aberrants.",
+            "The twin molten horns located high up on its body are Pyro-aligned organs that can unleash more vicious elemental attacks.",
+            "When the Armored Crablord unleashes certain attacks, its twin molten horns are closer to the ground, providing an opportunity to use Elemental Reactions."
+          ]
+        },
+        {
+          "enemy_id": "Tenoyollotzin",
+          "instructions": [
+            "Act 8 · Battle-Hardened Pipilpan Idol",
+            "During battle, the entity will create multiple hats and hide within one of them, then rapidly switch the positions of these hats.",
+            "After a certain number of switches, if the hat that conceals the entity takes Electro-Charged or Lunar-Charged damage, it will temporarily halt.",
+            "Deal a certain amount of DMG to the hat concealing the entity to break all of the hats, causing the entity to reveal itself."
+          ]
+        },
+        {
+          "enemy_id": "Magbeast_Pergesa",
+          "instructions": [
+            "Act 10 · Radiant Moonfly",
+            "The strongest species, even among radiant beasts, whose 'Radiant Cocoon' displays still more obvious effects.",
+            "Quickly heal your HP to its maximum to escape from a Radiant Cocoon.",
+            "Radiant beasts possess many mysterious characteristics — rumors even circle that they can change their Elemental Type under the right conditions..."
+          ]
+        },
+        {
+          "enemy_id": "ForlornVessel_Strong_Warbanner_Fire",
+          "instructions": [
+            "Extra Act 1 · Keep Fighting",
+            "Keep fighting until the countdown ends. End the stage with at least one character left standing to successfully complete the challenge.",
+            "Each opponent you defeat will take time off the countdown.",
+            "Once the challenge begins, all party members will continuously lose small amounts of HP."
+          ]
+        },
+        {
+          "enemy_id": "Drake_Deepsea_Water",
+          "instructions": [
+            "Extra Act 2 · Battle-Hardened Primordial Bathysmal Vishap",
+            "The Battle-Hardened Primordial Bathysmal Vishap will attack using Cleansing Shower, and will also deploy Purification Fields.",
+            "Characters will lose a certain amount of Energy when damaged by Cleansing Shower or when stepping into a Purification Field.",
+            "If the character has insufficient Energy, they will lose HP instead."
+          ]
+        }
+      ]
+    },
+    "visionary": {
+      "conditions": {
+        "level": 100,
+        "rooms": 10,
+        "opening_characters": 6,
+        "characters_available": 22,
+        "characters_with_bonus": 26,
+        "min_level": 70,
+        "boss_acts": 10
+      },
+      "stages": [
+        {
+          "enemy_id": "Fungus_Raptor",
+          "instructions": [
+            "Act 3 · Jadeplume Terrorshroom",
+            "An evolved Fungus. When it is hit by Electro attacks and Catalyze reactions, it will accumulate Activation.",
+            "When it is hit by Pyro attacks, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an Activated state.",
+            "An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted."
+          ]
+        },
+        {
+          "enemy_id": "HermitCrab_Primo",
+          "instructions": [
+            "Act 6 · Emperor of Fire and Iron",
+            "An Armored Crablord that has survived for countless eons and surpassed almost all other Fontemer Aberrants.",
+            "The twin molten horns located high up on its body are Pyro-aligned organs that can unleash more vicious elemental attacks.",
+            "When the Armored Crablord unleashes certain attacks, its twin molten horns are closer to the ground, providing an opportunity to use Elemental Reactions."
+          ]
+        },
+        {
+          "enemy_id": "Tenoyollotzin",
+          "instructions": [
+            "Act 8 · Battle-Hardened Pipilpan Idol",
+            "During battle, the entity will create multiple hats and hide within one of them, then rapidly switch the positions of these hats.",
+            "After a certain number of switches, if the hat that conceals the entity takes Electro-Charged or Lunar-Charged damage, it will temporarily halt.",
+            "Deal a certain amount of DMG to the hat concealing the entity to break all of the hats, causing the entity to reveal itself."
+          ]
+        },
+        {
+          "enemy_id": "Magbeast_Pergesa",
+          "instructions": [
+            "Act 10 · Radiant Moonfly",
+            "The strongest species, even among radiant beasts, whose 'Radiant Cocoon' displays still more obvious effects.",
+            "Quickly heal your HP to its maximum to escape from a Radiant Cocoon.",
+            "Radiant beasts possess many mysterious characteristics — rumors even circle that they can change their Elemental Type under the right conditions..."
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "conditions": {
+        "level": 95,
+        "rooms": 8,
+        "opening_characters": 6,
+        "characters_available": 16,
+        "characters_with_bonus": 20,
+        "min_level": 70,
+        "boss_acts": 8
+      },
+      "stages": [
+        {
+          "enemy_id": "Fungus_Raptor",
+          "instructions": [
+            "Act 3 · Jadeplume Terrorshroom",
+            "An evolved Fungus. When it is hit by Electro attacks and Catalyze reactions, it will accumulate Activation.",
+            "When it is hit by Pyro attacks, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an Activated state.",
+            "An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted."
+          ]
+        },
+        {
+          "enemy_id": "HermitCrab_Primo",
+          "instructions": [
+            "Act 6 · Emperor of Fire and Iron",
+            "An Armored Crablord that has survived for countless eons and surpassed almost all other Fontemer Aberrants.",
+            "The twin molten horns located high up on its body are Pyro-aligned organs that can unleash more vicious elemental attacks.",
+            "When the Armored Crablord unleashes certain attacks, its twin molten horns are closer to the ground, providing an opportunity to use Elemental Reactions."
+          ]
+        },
+        {
+          "enemy_id": "Tenoyollotzin",
+          "instructions": [
+            "Act 8 · Battle-Hardened Pipilpan Idol",
+            "During battle, the entity will create multiple hats and hide within one of them, then rapidly switch the positions of these hats.",
+            "After a certain number of switches, if the hat that conceals the entity takes Electro-Charged or Lunar-Charged damage, it will temporarily halt.",
+            "Deal a certain amount of DMG to the hat concealing the entity to break all of the hats, causing the entity to reveal itself."
+          ]
+        }
+      ]
+    },
+    "normal": {
+      "conditions": {
+        "level": 90,
+        "rooms": 6,
+        "opening_characters": 6,
+        "characters_available": 12,
+        "characters_with_bonus": 14,
+        "min_level": 60,
+        "boss_acts": 6
+      },
+      "stages": [
+        {
+          "enemy_id": "Fungus_Raptor",
+          "instructions": [
+            "Act 3 · Jadeplume Terrorshroom",
+            "An evolved Fungus. When it is hit by Electro attacks and Catalyze reactions, it will accumulate Activation.",
+            "When it is hit by Pyro attacks, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an Activated state.",
+            "An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted."
+          ]
+        },
+        {
+          "enemy_id": "HermitCrab_Primo",
+          "instructions": [
+            "Act 6 · Emperor of Fire and Iron",
+            "An Armored Crablord that has survived for countless eons and surpassed almost all other Fontemer Aberrants.",
+            "The twin molten horns located high up on its body are Pyro-aligned organs that can unleash more vicious elemental attacks.",
+            "When the Armored Crablord unleashes certain attacks, its twin molten horns are closer to the ground, providing an opportunity to use Elemental Reactions."
+          ]
+        }
+      ]
+    },
+    "easy": {
+      "conditions": {
+        "level": 80,
+        "rooms": 3,
+        "opening_characters": 6,
+        "characters_available": 8,
+        "characters_with_bonus": 10,
+        "min_level": 60,
+        "boss_acts": 3
+      },
+      "stages": [
+        {
+          "enemy_id": "Fungus_Raptor",
+          "instructions": [
+            "Act 3 · Jadeplume Terrorshroom",
+            "An evolved Fungus. When it is hit by Electro attacks and Catalyze reactions, it will accumulate Activation.",
+            "When it is hit by Pyro attacks, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an Activated state.",
+            "An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imaginarium Theater | JuanLab</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theater.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <main class="container">
+    <header>
+      <div class="hero-brand">
+        <a href="index.html" class="back-link">&larr; JuanLab</a>
+        <div class="hero-divider"></div>
+        <strong class="hero-title">Imaginarium Theater</strong>
+      </div>
+
+      <div class="theater-toggle" role="group">
+        <button id="btn-download" class="outline">&#x2193; Scarica immagine</button>
+      </div>
+    </header>
+
+    <div id="theater-mode-top" class="mode-switch mode-switch-top" role="group" aria-label="Selettore difficolta"></div>
+
+    <div id="theater-meta" class="theater-meta"></div>
+
+    <section id="theater-stage-card" class="theater-card theater-stage-card"></section>
+    <section id="theater-rules-card" class="theater-card theater-rules-card"></section>
+    <section id="theater-strategies-card" class="theater-card theater-strategies-card"></section>
+  </main>
+
+  <footer class="container">
+    <small>JuanLab &mdash; GitHub Pages</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theater.js"></script>
+</body>
+</html>

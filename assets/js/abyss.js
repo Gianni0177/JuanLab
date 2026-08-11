@@ -37,7 +37,13 @@
   for (const e of enemyList) {
     const filename = e.image_path.split('/').pop();
     const id = filename.replace('UI_MonsterIcon_', '').replace(/\.\w+$/, '');
-    lookup[id] = { image_path: e.image_path, name: e.name, info: e.info ?? [] };
+    lookup[id] = {
+      image_path: e.image_path,
+      name: e.name,
+      info: Array.isArray(e.info)
+        ? e.info.filter((line) => String(line || '').trim().length > 0)
+        : [],
+    };
   }
 
   function totalHp(slots) {
@@ -74,10 +80,13 @@
       const m    = lookup[e.id] ?? { image_path: '', name: e.id, info: [] };
       const hp   = (e.hp ?? 0).toLocaleString('it-IT');
       // info: usa quello del lookup (enemies.json), con fallback all'override nello slot
-      const infoList = (Array.isArray(e.info) && e.info.length) ? e.info : (Array.isArray(m.info) ? m.info : []);
+      const overrideInfo = Array.isArray(e.info)
+        ? e.info.filter((line) => String(line || '').trim().length > 0)
+        : [];
+      const infoList = overrideInfo.length ? overrideInfo : (Array.isArray(m.info) ? m.info : []);
       const tips = infoList.length
-        ? `<ul>${infoList.map(t => `<li>${t}</li>`).join('')}</ul>`
-        : '<em style="color:#555">Nessun consiglio</em>';
+        ? `<strong class="enemy-tooltip-title">Info Nemico</strong><ul>${infoList.map(t => `<li>${t}</li>`).join('')}</ul>`
+        : '';
 
       const card = document.createElement('div');
       card.className = 'enemy-card';
@@ -89,7 +98,7 @@
         </div>
         <span class="enemy-hp">${hp} HP</span>
         <span class="enemy-qty">x${e.quantity ?? 1}</span>
-        <span class="enemy-info">ⓘ<span class="tooltip-info">${tips}</span></span>`;
+        ${tips ? `<span class="enemy-info">ⓘ<span class="tooltip-info enemy-tooltip-box">${tips}</span></span>` : ''}`;
       enemiesEl.appendChild(card);
     }
 

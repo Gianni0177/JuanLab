@@ -1,0 +1,238 @@
+{
+  "period": "Periodo live: 2026-08-01 ~ 2026-09-01",
+  "fixed_buff": "I personaggi di apertura avranno PS max, ATT e DIF aumentano del 20%.",
+  "mechanics": {
+    "recommended_elements": [
+      { "name": "Hydro", "icon": "assets/img/elements/Hydro.webp" },
+      { "name": "Electro", "icon": "assets/img/elements/Electro.webp" },
+      { "name": "Cryo", "icon": "assets/img/elements/Cryo.webp" }
+    ],
+    "opening_characters": [
+      { "name": "Yelan", "image": "assets/img/characters/UI_AvatarIcon_Yelan.webp" },
+      { "name": "Aino", "image": "assets/img/characters/UI_AvatarIcon_Aino.webp" },
+      { "name": "Flins", "image": "assets/img/characters/UI_AvatarIcon_Flins.webp" },
+      { "name": "Ororon", "image": "assets/img/characters/UI_AvatarIcon_Olorun.webp" },
+      { "name": "Skirk", "image": "assets/img/characters/UI_AvatarIcon_SkirkNew.webp" },
+      { "name": "Layla", "image": "assets/img/characters/UI_AvatarIcon_Layla.webp" }
+    ],
+    "guest_stars": [
+      { "name": "Arlecchino", "image": "assets/img/characters/UI_AvatarIcon_Arlecchino.webp" },
+      { "name": "Chevreuse", "image": "assets/img/characters/UI_AvatarIcon_Chevreuse.webp" },
+      { "name": "Kaedehara Kazuha", "image": "assets/img/characters/UI_AvatarIcon_Kazuha.webp" },
+      { "name": "Tighnari", "image": "assets/img/characters/UI_AvatarIcon_Tighnari.webp" }
+    ],
+    "season_effect_text": "After the above characters join your party, Max HP, ATK, and DEF are increased by 20%."
+  },
+  "selected_mode": "lunar",
+  "modes": {
+    "lunar": {
+      "conditions": {
+        "level": 100,
+        "rooms": 12,
+        "opening_characters": 6,
+        "characters_available": 28,
+        "characters_with_bonus": 32,
+        "min_level": 70,
+        "boss_acts": 10
+      },
+      "stages": [
+        {
+          "enemy_id": "Gastrobot_01",
+          "instructions": [
+            "Act 3 · Knuckle Duckle",
+            "A duck-shaped combat machine built from scrap metal and powered by kuuvahki. It is programmed with a variety of strategies.",
+            "After the battle begins, it will enter Duckstruction Mode, becoming more aggressive, generating a Ward for itself, and summoning floating Stamping Devices to harass you.",
+            "When this happens, you must first deal with the Stamping Devices. Deal DMG with Electro-Charged or Lunar-Charged reactions, or destroy them directly, to fry their circuits and cause them to attack Knuckle Duckle's Ward instead..."
+          ]
+        },
+        {
+          "enemy_id": "Thoarder_Elder_Standard_Hildegard_01",
+          "instructions": [
+            "Act 6 · Battle-Hardened Elite Treasure Hoarder",
+            "In battle, the Nemesis will summon battle armor from three directions. This armor can enhance the Nemesis.",
+            "Trigger Frozen on the Nemesis, or use Overloaded on her, to break her battle armor and prevent the armor from attaching to her.",
+            "The Nemesis is enhanced according to the number of armor pieces attached, and should no armor attach, no enhancement effects will be granted."
+          ]
+        },
+        {
+          "enemy_id": "Monitor_02",
+          "instructions": [
+            "Act 8 · Battle-Hardened Precursor's Secret Source Matrix of Overseer Network",
+            "During combat, the Nemesis will deploy a Suppression Field to strengthen itself and place 4 detection devices protected by Hydro Wards.",
+            "After the field is active for a while, the Nemesis will unleash a single wide AoE attack and retrieve the remaining detection devices.",
+            "It will then gain a Hydro Ward whose absorption is based on the number of devices retrieved."
+          ]
+        },
+        {
+          "enemy_id": "Apparatus_Perpetual",
+          "instructions": [
+            "Act 10 · Perpetual Mechanical Array",
+            "A mysterious ruin machine that can reconfigure itself into various forms.",
+            "In battle, the Perpetual Mechanical Array will enter the Absolute Defense state, in which it splits and summons several different kinds of Ruin Sentinels.",
+            "After defeating the enhanced Ruin Sentinels, Absolute Defense state will be removed and it will enter a weakened state."
+          ]
+        },
+        {
+          "enemy_id": "ForlornVessel_Strong_Warbanner_Fire",
+          "instructions": [
+            "Extra Act 1 · Keep Fighting",
+            "Keep fighting until the countdown ends. End the stage with at least one character left standing to successfully complete the challenge.",
+            "Each opponent you defeat will take time off the countdown.",
+            "Once the challenge begins, all party members will continuously lose small amounts of HP."
+          ]
+        },
+        {
+          "enemy_id": "Eremite_Male_Strong_Katar",
+          "instructions": [
+            "Extra Act 2 · Keep Fighting",
+            "Keep fighting until the countdown ends. End the stage with at least one character left standing to successfully complete the challenge.",
+            "Each opponent you defeat will take time off the countdown.",
+            "Once the challenge begins, Electro Bursts will periodically be set off, dealing Electro DMG to your active character."
+          ]
+        }
+      ]
+    },
+    "visionary": {
+      "conditions": {
+        "level": 100,
+        "rooms": 10,
+        "opening_characters": 6,
+        "characters_available": 22,
+        "characters_with_bonus": 26,
+        "min_level": 70,
+        "boss_acts": 10
+      },
+      "stages": [
+        {
+          "enemy_id": "Gastrobot_01",
+          "instructions": [
+            "Act 3 · Knuckle Duckle",
+            "A duck-shaped combat machine built from scrap metal and powered by kuuvahki. It is programmed with a variety of strategies.",
+            "After the battle begins, it will enter Duckstruction Mode, becoming more aggressive, generating a Ward for itself, and summoning floating Stamping Devices to harass you.",
+            "When this happens, you must first deal with the Stamping Devices. Deal DMG with Electro-Charged or Lunar-Charged reactions, or destroy them directly, to fry their circuits and cause them to attack Knuckle Duckle's Ward instead..."
+          ]
+        },
+        {
+          "enemy_id": "Thoarder_Elder_Standard_Hildegard_01",
+          "instructions": [
+            "Act 6 · Battle-Hardened Elite Treasure Hoarder",
+            "In battle, the Nemesis will summon battle armor from three directions. This armor can enhance the Nemesis.",
+            "Trigger Frozen on the Nemesis, or use Overloaded on her, to break her battle armor and prevent the armor from attaching to her.",
+            "The Nemesis is enhanced according to the number of armor pieces attached, and should no armor attach, no enhancement effects will be granted."
+          ]
+        },
+        {
+          "enemy_id": "Monitor_02",
+          "instructions": [
+            "Act 8 · Battle-Hardened Precursor's Secret Source Matrix of Overseer Network",
+            "During combat, the Nemesis will deploy a Suppression Field to strengthen itself and place 4 detection devices protected by Hydro Wards.",
+            "After the field is active for a while, the Nemesis will unleash a single wide AoE attack and retrieve the remaining detection devices.",
+            "It will then gain a Hydro Ward whose absorption is based on the number of devices retrieved."
+          ]
+        },
+        {
+          "enemy_id": "Apparatus_Perpetual",
+          "instructions": [
+            "Act 10 · Perpetual Mechanical Array",
+            "A mysterious ruin machine that can reconfigure itself into various forms.",
+            "In battle, the Perpetual Mechanical Array will enter the Absolute Defense state, in which it splits and summons several different kinds of Ruin Sentinels.",
+            "After defeating the enhanced Ruin Sentinels, Absolute Defense state will be removed and it will enter a weakened state."
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "conditions": {
+        "level": 95,
+        "rooms": 8,
+        "opening_characters": 6,
+        "characters_available": 16,
+        "characters_with_bonus": 20,
+        "min_level": 70,
+        "boss_acts": 8
+      },
+      "stages": [
+        {
+          "enemy_id": "Gastrobot_01",
+          "instructions": [
+            "Act 3 · Knuckle Duckle",
+            "A duck-shaped combat machine built from scrap metal and powered by kuuvahki. It is programmed with a variety of strategies.",
+            "After the battle begins, it will enter Duckstruction Mode, becoming more aggressive, generating a Ward for itself, and summoning floating Stamping Devices to harass you.",
+            "When this happens, you must first deal with the Stamping Devices. Deal DMG with Electro-Charged or Lunar-Charged reactions, or destroy them directly, to fry their circuits and cause them to attack Knuckle Duckle's Ward instead..."
+          ]
+        },
+        {
+          "enemy_id": "Thoarder_Elder_Standard_Hildegard_01",
+          "instructions": [
+            "Act 6 · Battle-Hardened Elite Treasure Hoarder",
+            "In battle, the Nemesis will summon battle armor from three directions. This armor can enhance the Nemesis.",
+            "Trigger Frozen on the Nemesis, or use Overloaded on her, to break her battle armor and prevent the armor from attaching to her.",
+            "The Nemesis is enhanced according to the number of armor pieces attached, and should no armor attach, no enhancement effects will be granted."
+          ]
+        },
+        {
+          "enemy_id": "Monitor_02",
+          "instructions": [
+            "Act 8 · Battle-Hardened Precursor's Secret Source Matrix of Overseer Network",
+            "During combat, the Nemesis will deploy a Suppression Field to strengthen itself and place 4 detection devices protected by Hydro Wards.",
+            "After the field is active for a while, the Nemesis will unleash a single wide AoE attack and retrieve the remaining detection devices.",
+            "It will then gain a Hydro Ward whose absorption is based on the number of devices retrieved."
+          ]
+        }
+      ]
+    },
+    "normal": {
+      "conditions": {
+        "level": 90,
+        "rooms": 6,
+        "opening_characters": 6,
+        "characters_available": 12,
+        "characters_with_bonus": 14,
+        "min_level": 60,
+        "boss_acts": 6
+      },
+      "stages": [
+        {
+          "enemy_id": "Gastrobot_01",
+          "instructions": [
+            "Act 3 · Knuckle Duckle",
+            "A duck-shaped combat machine built from scrap metal and powered by kuuvahki. It is programmed with a variety of strategies.",
+            "After the battle begins, it will enter Duckstruction Mode, becoming more aggressive, generating a Ward for itself, and summoning floating Stamping Devices to harass you.",
+            "When this happens, you must first deal with the Stamping Devices. Deal DMG with Electro-Charged or Lunar-Charged reactions, or destroy them directly, to fry their circuits and cause them to attack Knuckle Duckle's Ward instead..."
+          ]
+        },
+        {
+          "enemy_id": "Thoarder_Elder_Standard_Hildegard_01",
+          "instructions": [
+            "Act 6 · Battle-Hardened Elite Treasure Hoarder",
+            "In battle, the Nemesis will summon battle armor from three directions. This armor can enhance the Nemesis.",
+            "Trigger Frozen on the Nemesis, or use Overloaded on her, to break her battle armor and prevent the armor from attaching to her.",
+            "The Nemesis is enhanced according to the number of armor pieces attached, and should no armor attach, no enhancement effects will be granted."
+          ]
+        }
+      ]
+    },
+    "easy": {
+      "conditions": {
+        "level": 80,
+        "rooms": 3,
+        "opening_characters": 6,
+        "characters_available": 8,
+        "characters_with_bonus": 10,
+        "min_level": 60,
+        "boss_acts": 3
+      },
+      "stages": [
+        {
+          "enemy_id": "Gastrobot_01",
+          "instructions": [
+            "Act 3 · Knuckle Duckle",
+            "A duck-shaped combat machine built from scrap metal and powered by kuuvahki. It is programmed with a variety of strategies.",
+            "After the battle begins, it will enter Duckstruction Mode, becoming more aggressive, generating a Ward for itself, and summoning floating Stamping Devices to harass you.",
+            "When this happens, you must first deal with the Stamping Devices. Deal DMG with Electro-Charged or Lunar-Charged reactions, or destroy them directly, to fry their circuits and cause them to attack Knuckle Duckle's Ward instead..."
+          ]
+        }
+      ]
+    }
+  }
+}
