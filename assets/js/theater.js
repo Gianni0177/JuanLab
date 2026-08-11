@@ -212,7 +212,7 @@
           </ul>
           <ul>
             <li><strong>Buff fisso:</strong> ${escapeHtml(data.fixed_buff ?? '')}</li>
-            <li><strong>Nota:</strong> in ogni periodo cambiano elementi consentiti, opening e guest stars.</li>
+            <li><strong>Nota:</strong> in ogni periodo cambiano elementi consentiti, personaggi di apertura e invitati speciali.</li>
           </ul>
         </div>
       </div>
@@ -260,11 +260,11 @@
       </div>
 
       <div class="setup-block">
-        <p class="setup-label">Guest stars speciali</p>
+        <p class="setup-label">Invitati speciali</p>
         <div class="character-row guests">
           ${renderCharacters(guestStars, 'char-pill guest')}
         </div>
-        <p class="setup-note">Le 4 guest stars sono opzionali: puoi usarle solo se le possiedi nel tuo account.</p>
+        <p class="setup-note">I 4 invitati speciali sono opzionali: puoi usarli solo se li possiedi nel tuo account.</p>
       </div>
     `;
   }
