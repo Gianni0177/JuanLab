@@ -1,10 +1,13 @@
 # JuanLab
 
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://gianni0177.github.io/JuanLab/)
+[![Static Site](https://img.shields.io/badge/Type-HTML%20%2F%20CSS%20%2F%20JS-dark)](https://github.com/Gianni0177/JuanLab)
+
 Sito personale pubblicato su GitHub Pages con tema dark, sfondo animato e contenuti organizzati in pagine dedicate.
 
 Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanLab/)
 
-## Contenuti del progetto
+## ✨ Contenuti del progetto
 
 Il sito include tre sezioni principali:
 
@@ -12,55 +15,26 @@ Il sito include tre sezioni principali:
 - Imaginarium Theater
 - Stygian Onslaught
 
-## Pagine principali
+## 🧭 Pagine principali
 
 - Home: `index.html`
 - Spyral Abyss: `abyss.html`
 - Imaginarium Theater: `theater.html`
 - Stygian Onslaught: `stygian.html`
 
-## Struttura del progetto
+## 🌳 Struttura del progetto
 
-```text
-JuanLab/
-├── index.html
-├── abyss.html
-├── theater.html
-├── stygian.html
-├── README.md
-└── assets/
-    ├── css/
-    │   ├── style.css
-    │   ├── abyss.css
-    │   ├── theater.css
-    │   └── stygian.css
-    ├── js/
-    │   ├── home.js
-    │   ├── main.js
-    │   ├── abyss.js
-    │   ├── theater.js
-    │   └── stygian.js
-    ├── data/
-    │   ├── enemies.json
-    │   ├── enemies.txt
-    │   ├── abyss/
-    │   │   ├── index.json
-    │   │   ├── 2026-07-16.json
-    │   │   └── 2026-08-16.json
-    │   ├── theater/
-    │   │   ├── index.json
-    │   │   ├── 2026-08-01.json
-    │   │   └── 2026-09-01.json
-    │   └── stygian/
-    │       ├── index.json
-    │       └── 2026-05-19.json
-    └── img/
-        ├── hero.png
-        ├── favicon.png
-        ├── enemies/
-        ├── characters/
-        ├── elements/
-        └── memes/
+```mermaid
+flowchart TD
+    A[JuanLab] --> B[index.html]
+    A --> C[abyss.html]
+    A --> D[theater.html]
+    A --> E[stygian.html]
+    A --> F[assets]
+    F --> G[css]
+    F --> H[js]
+    F --> I[data]
+    F --> J[img]
 ```
 
 ## Avvio locale
