@@ -133,14 +133,38 @@
     }, 1000);
   }
 
-  function render(data, toDateStr) {
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\"/g, '&quot;');
+  }
+
+  function formatDateLongIt(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return String(value ?? '');
+    const formatted = new Intl.DateTimeFormat('it-IT', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }).format(date);
+    return formatted.replace(/\b\p{L}/u, (c) => c.toUpperCase());
+  }
+
+  function render(data, periodEntry) {
     if (meta) {
       const makeBuff = (label, text) => text
-        ? `<div class="abyss-buff"><span class="buff-half">${label}</span>${text}</div>`
+        ? `<div class="abyss-buff"><span class="buff-half">${label}</span>${escapeHtml(text)}</div>`
         : '';
       const totalAll = totalHp(data.slots ?? []).toLocaleString('it-IT');
+      const fromDate = formatDateLongIt(periodEntry?.from);
+      const toDate = formatDateLongIt(periodEntry?.to);
+      const periodLabel = periodEntry?.from && periodEntry?.to
+        ? `Periodo live: ${fromDate} ~ ${toDate}`
+        : (data.period ?? '');
       meta.innerHTML = `
-        <div class="abyss-period">${data.period ?? ''}</div>
+        <div class="abyss-period">${escapeHtml(periodLabel)}</div>
         ${makeBuff('Buff stagionale', data.gimmick)}
         ${makeBuff('Prima met\u00e0', data.buff_first)}
         ${makeBuff('Seconda met\u00e0', data.buff_second)}
@@ -180,7 +204,7 @@
       btn.addEventListener('click', () => {
         toggleEl.querySelectorAll('button[data-idx]').forEach(b => b.removeAttribute('aria-current'));
         btn.setAttribute('aria-current', 'true');
-        render(abyssData[i], abyssIndex[i].to);
+        render(abyssData[i], abyssIndex[i]);
         startCountdown(abyssIndex[i], i === activeIdx);
       });
       btn.dataset.idx = i;
@@ -188,7 +212,7 @@
     });
   }
 
-  render(abyssData[activeIdx], abyssIndex[activeIdx].to);
+  render(abyssData[activeIdx], abyssIndex[activeIdx]);
   startCountdown(abyssIndex[activeIdx], true);
 
   // download

@@ -7,7 +7,7 @@
 }
 
 .abyss-countdown {
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
   font-size: 0.78rem;
   color: var(--pico-muted-color);
   font-variant-numeric: tabular-nums;
@@ -47,7 +47,7 @@
 /* ── Meta: periodo e gimmick ───────────────────────────────────────────── */
 
 .abyss-meta {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.4rem;
 }
 
 .abyss-period {
@@ -383,8 +383,7 @@
   margin: 0;
   padding: 0.65rem 0.75rem;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(14, 18, 36, 0.55);
+  margin-bottom: 1.4rem;
   aspect-ratio: auto;
   display: block;
   height: auto;
@@ -418,8 +417,7 @@
   /* tooltip (i): fisso in basso al centro per non uscire dallo schermo */
   .tooltip-info {
     position: fixed;
-    bottom: 1rem;
-    left: 50%;
+    margin-top: 0.5rem;
     right: auto;
     top: auto;
     transform: translateX(-50%);
