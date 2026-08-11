@@ -24,6 +24,7 @@
     "season_effect_text": "After the above characters join your party, Max HP, ATK, and DEF are increased by 20%."
   },
   "selected_mode": "lunar",
+  "strategies": [],
   "modes": {
     "lunar": {
       "conditions": {
