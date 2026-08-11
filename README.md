@@ -1,90 +1,152 @@
 # JuanLab
 
-Sito personale pubblicato su **GitHub Pages** — dark theme, stelle cadenti, e una sezione dedicata allo **Spyral Abyss** di Genshin Impact.
+Sito personale su GitHub Pages con tema dark, sfondo animato e pagine dedicate a:
 
-🌐 **[juanlab live](https://Gianni0177.github.io/JuanLab/)**
+- Spyral Abyss
+- Imaginarium Theater
 
----
+Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanLab/)
 
-## Struttura
+## Pagine principali
 
-```
+- Home: `index.html`
+- Spyral Abyss: `abyss.html`
+- Imaginarium Theater: `theater.html`
+
+## Struttura progetto
+
+```text
 JuanLab/
-├── index.html                  # Home page
-├── abyss.html                  # Pagina dello Spyral Abyss
-├── README.md                   # Documentazione del progetto
-├── favicon.png                 # Icona del sito
-├── assets/
-│   ├── css/
-│   │   ├── abyss.css           # Stili della pagina Abyss
-│   │   └── style.css           # Stili generali del sito
-│   ├── data/
-│   │   ├── enemies.json        # Dizionario dei nemici
-│   │   └── abyss/
-│   │       ├── index.json      # Elenco dei periodi disponibili
-│   │       ├── 2026-07-16.json # Dati Abyss di un periodo
-│   │       └── 2026-08-16.json # Dati Abyss di un altro periodo
-│   ├── img/
-│   │   ├── enemies/            # Icone dei nemici
-│   │   ├── memes/              # Immagini meme / extra
-│   │   ├── pg/                 # Immagini dei personaggi
-│   │   ├── favicon.png         # Icona locale
-│   │   └── hero.png            # Immagine hero
-│   └── js/
-│       ├── abyss.js            # Logica della griglia Abyss
-│       └── main.js             # Animazioni e script globali
+├── index.html
+├── abyss.html
+├── theater.html
+├── README.md
+└── assets/
+    ├── css/
+    │   ├── style.css
+    │   ├── abyss.css
+    │   └── theater.css
+    ├── js/
+    │   ├── home.js
+    │   ├── main.js
+    │   ├── abyss.js
+    │   └── theater.js
+    ├── data/
+    │   ├── enemies.json
+    │   ├── enemies.txt
+    │   ├── abyss/
+    │   │   ├── index.json
+    │   │   ├── 2026-07-16.json
+    │   │   └── 2026-08-16.json
+    │   └── theater/
+    │       ├── index.json
+    │       ├── 2026-08-01.json
+    │       └── 2026-09-01.json
+    └── img/
+        ├── hero.png
+        ├── favicon.png
+        ├── enemies/
+        ├── characters/
+        ├── elements/
+        └── memes/
 ```
-
----
 
 ## Avvio locale
 
-**Con Live Server** (VS Code): tasto destro su `index.html` → *Open with Live Server*
+Con Live Server (VS Code):
 
-**Con Python**:
+1. Apri `index.html`
+2. Click destro
+3. Open with Live Server
+
+Con Python:
+
 ```bash
 python -m http.server 8080
-# → http://localhost:8080
 ```
 
-> ⚠️ Aprire `index.html` direttamente come file (`file://`) non funziona — `fetch()` richiede un server HTTP.
+Apri poi `http://localhost:8080`.
 
----
+Nota: l'apertura diretta in `file://` non funziona correttamente perché i file JSON vengono caricati con `fetch()`.
 
-## Aggiornare l'Abyss
+## Aggiornare Spyral Abyss
 
-Aggiungi o modifica un file JSON nella cartella `assets/data/abyss/`, ad esempio `2026-08-16.json`, e assicurati che sia referenziato anche in `assets/data/abyss/index.json`.
+1. Crea o modifica un file in `assets/data/abyss/` (es. `2026-08-16.json`)
+2. Aggiorna `assets/data/abyss/index.json` con periodo e nome file
 
-Schema base:
+Schema minimo:
 
-```jsonc
+```json
 {
-  "period": "16 Ago – 16 Set 2026",
-  "gimmick": "Descrizione del buff globale...",
-  "buff_first": "Buff Prima Metà...",
-  "buff_second": "Buff Seconda Metà...",
+  "period": "Periodo live: 16 Agosto 2026 ~ 16 Settembre 2026",
+  "gimmick": "Descrizione buff globale",
+  "buff_first": "Descrizione buff prima meta",
+  "buff_second": "Descrizione buff seconda meta",
   "slots": [
     {
       "slot": 1,
-      "label": "Piano 12-1 Prima Metà",
+      "label": "Piano 12-1 Prima meta",
       "enemies": [
-        { "id": "NomeNemico", "level": 95, "hp": 1192502, "quantity": 1 }
+        { "id": "Fungus_Raptor", "level": 100, "hp": 1192502, "quantity": 1 }
       ]
     }
   ]
 }
 ```
 
-L'`id` corrisponde al nome del file presente in `assets/img/enemies/`, senza prefisso o estensione.
+`id` deve corrispondere alla chiave usata dal progetto per i nemici (derivata dalle icone in `assets/img/enemies/` e dal lookup in `assets/data/enemies.json`).
 
----
+## Aggiornare Imaginarium Theater
 
-## Pubblicare le modifiche
+1. Crea o modifica un file in `assets/data/theater/` (es. `2026-09-01.json`)
+2. Aggiorna `assets/data/theater/index.json`
+
+Campi principali:
+
+- `period`
+- `fixed_buff`
+- `mechanics` (`recommended_elements`, `opening_characters`, `guest_stars`)
+- `selected_mode`
+- `modes` (`lunar`, `visionary`, `hard`, `normal`, `easy`)
+- `strategies`
+
+Per avere la sezione Strategie presente ma vuota, usa:
+
+```json
+"strategies": []
+```
+
+Esempio singola strategia:
+
+```json
+"strategies": [
+  {
+    "title": "Gestione energia",
+    "points": [
+      "Priorita ai personaggi con ricarica alta",
+      "Conserva le burst per gli atti boss"
+    ]
+  }
+]
+```
+
+## Aggiornare info nemici
+
+File: `assets/data/enemies.json`
+
+Regole utili:
+
+- `name` e icona devono essere coerenti
+- `info` deve essere un array di stringhe
+- se non hai consigli, usa `"info": [""]` oppure `"info": []`
+- usa sempre doppi apici standard `"` (evita virgolette tipografiche)
+
+## Deploy
 
 ```bash
 git add .
-git commit -m "descrizione modifica"
+git commit -m "Aggiornamento contenuti"
 git push
 ```
 
-GitHub Pages si aggiorna entro 1–2 minuti dal push.
+GitHub Pages pubblica di solito entro 1-2 minuti.
