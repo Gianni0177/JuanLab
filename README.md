@@ -124,7 +124,7 @@ Esempio singola strategia:
     "title": "Gestione energia",
     "points": [
       "Priorita ai personaggi con ricarica alta",
-      "Conserva le burst per gli atti boss"
+      "Conserva i pg di punta per gli atti boss"
     ]
   }
 ]
