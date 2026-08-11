@@ -220,7 +220,9 @@
   }
 
   function renderCharacters(list, tileClass) {
-    return list.map((pg) => `
+    return list
+      .filter((pg) => pg && typeof pg === 'object')
+      .map((pg) => `
       <div class="${tileClass}">
         <img src="${pg.image || 'assets/img/hero.png'}" alt="${escapeHtml(pg.name || 'Personaggio')}" loading="lazy" />
         <span>${escapeHtml(pg.name || 'Sconosciuto')}</span>
