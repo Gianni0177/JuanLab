@@ -1,12 +1,16 @@
 # JuanLab
 
-Sito personale su GitHub Pages con tema dark, sfondo animato e pagine dedicate a:
+Sito personale pubblicato su GitHub Pages con tema dark, sfondo animato e contenuti organizzati in pagine dedicate.
+
+Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanLab/)
+
+## Contenuti del progetto
+
+Il sito include tre sezioni principali:
 
 - Spyral Abyss
 - Imaginarium Theater
 - Stygian Onslaught
-
-Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanLab/)
 
 ## Pagine principali
 
@@ -15,7 +19,7 @@ Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanL
 - Imaginarium Theater: `theater.html`
 - Stygian Onslaught: `stygian.html`
 
-## Struttura progetto
+## Struttura del progetto
 
 ```text
 JuanLab/
@@ -28,14 +32,14 @@ JuanLab/
     ├── css/
     │   ├── style.css
     │   ├── abyss.css
-  │   ├── theater.css
-  │   └── stygian.css
+    │   ├── theater.css
+    │   └── stygian.css
     ├── js/
     │   ├── home.js
     │   ├── main.js
     │   ├── abyss.js
-  │   ├── theater.js
-  │   └── stygian.js
+    │   ├── theater.js
+    │   └── stygian.js
     ├── data/
     │   ├── enemies.json
     │   ├── enemies.txt
@@ -43,13 +47,13 @@ JuanLab/
     │   │   ├── index.json
     │   │   ├── 2026-07-16.json
     │   │   └── 2026-08-16.json
-    │   └── theater/
+    │   ├── theater/
+    │   │   ├── index.json
+    │   │   ├── 2026-08-01.json
+    │   │   └── 2026-09-01.json
+    │   └── stygian/
     │       ├── index.json
-    │       ├── 2026-08-01.json
-  │       └── 2026-09-01.json
-  │   └── stygian/
-  │       ├── index.json
-  │       └── 2026-05-19.json
+    │       └── 2026-05-19.json
     └── img/
         ├── hero.png
         ├── favicon.png
@@ -61,26 +65,30 @@ JuanLab/
 
 ## Avvio locale
 
-Con Live Server (VS Code):
+Non è richiesto alcun build step. Il sito è statico e può essere visualizzato in locale in due modi:
+
+### Con Live Server (VS Code)
 
 1. Apri `index.html`
-2. Click destro
-3. Open with Live Server
+2. Fai clic destro
+3. Seleziona "Open with Live Server"
 
-Con Python:
+### Con Python
 
 ```bash
 python -m http.server 8080
 ```
 
-Apri poi `http://localhost:8080`.
+Quindi apri `http://localhost:8080` nel browser.
 
-Nota: l'apertura diretta in `file://` non funziona correttamente perché i file JSON vengono caricati con `fetch()`.
+> Nota: aprire i file direttamente con `file://` non è consigliato, perché i dati JSON vengono caricati tramite `fetch()`.
 
-## Aggiornare Spyral Abyss
+## Come aggiornare i contenuti
 
-1. Crea o modifica un file in `assets/data/abyss/` (es. `2026-08-16.json`)
-2. Aggiorna `assets/data/abyss/index.json` con periodo e nome file
+### Spyral Abyss
+
+1. Crea o modifica un file nella cartella `assets/data/abyss/` (ad esempio `2026-08-16.json`)
+2. Aggiorna `assets/data/abyss/index.json` con periodo e nome del file
 
 Schema minimo:
 
@@ -102,11 +110,11 @@ Schema minimo:
 }
 ```
 
-`id` deve corrispondere alla chiave usata dal progetto per i nemici (derivata dalle icone in `assets/img/enemies/` e dal lookup in `assets/data/enemies.json`).
+L'`id` del nemico deve corrispondere alla chiave usata dal progetto, derivata dalle icone in `assets/img/enemies/` e dal lookup in `assets/data/enemies.json`.
 
-## Aggiornare Imaginarium Theater
+### Imaginarium Theater
 
-1. Crea o modifica un file in `assets/data/theater/` (es. `2026-09-01.json`)
+1. Crea o modifica un file in `assets/data/theater/` (ad esempio `2026-09-01.json`)
 2. Aggiorna `assets/data/theater/index.json`
 
 Campi principali:
@@ -124,21 +132,21 @@ Per avere la sezione Strategie presente ma vuota, usa:
 "strategies": []
 ```
 
-Esempio singola strategia:
+Esempio di singola strategia:
 
 ```json
 "strategies": [
   {
     "title": "Gestione energia",
     "points": [
-      "Priorita ai personaggi con ricarica alta",
-      "Conserva i pg di punta per gli atti boss"
+      "Priorità ai personaggi con ricarica alta",
+      "Conserva i personaggi di punta per gli atti boss"
     ]
   }
 ]
 ```
 
-## Aggiornare Stygian Onslaught
+### Stygian Onslaught
 
 1. Crea o modifica un file in `assets/data/stygian/`
 2. Aggiorna `assets/data/stygian/index.json`
@@ -152,7 +160,7 @@ Campi principali:
 - `overview`
 - `difficulties`
 
-Ogni difficolta contiene un array `bosses`, e ogni boss usa `enemy_id` per recuperare nome e immagine da `assets/data/enemies.json`.
+Ogni difficoltà contiene un array `bosses`, e ogni boss usa `enemy_id` per recuperare nome e immagine da `assets/data/enemies.json`.
 
 Schema minimo:
 
@@ -167,7 +175,7 @@ Schema minimo:
   },
   "difficulties": {
     "6": {
-      "label": "Difficolta 6",
+      "label": "Difficoltà 6",
       "notes": "Focus generale",
       "bosses": [
         {
@@ -199,7 +207,7 @@ Schema minimo:
 }
 ```
 
-## Aggiornare info nemici
+### Informazioni sui nemici
 
 File: `assets/data/enemies.json`
 

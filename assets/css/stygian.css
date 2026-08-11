@@ -1,3 +1,14 @@
+.back-link {
+  font-size: 0.85rem;
+  color: var(--pico-muted-color);
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.back-link:hover {
+  color: var(--pico-color);
+}
+
 .stygian-toggle {
   display: flex;
   gap: 0.5rem;
