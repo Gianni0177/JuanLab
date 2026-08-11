@@ -1,0 +1,587 @@
+{
+  "version": "v7.0",
+  "period": "Periodo live: 19 Agosto 2026 ~ 30 Settembre 2026",
+  "selected_difficulty": "6",
+  "overview": {
+    "title": "Panoramica rotazione",
+    "points": []
+  },
+  "difficulties": {
+    "1": {
+      "label": "Difficolta 1",
+      "notes": "Versione base del periodo v7.0.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 40,
+          "hp": 88059,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall",
+              "description": "Il boss crea una Ward Electro resistente. Se lo colpisci mentre e sotto l'effetto di Stellar Glimmer, la Ward si danneggia e, una volta rotta, il boss resta paralizzato."
+            },
+            {
+              "title": "Galeforce",
+              "description": "Quando vola e richiama gli Anemo Orbs, distruggili con Hydro, Pyro, Electro o Cryo per impedirgli di recuperare potere e mandarlo in paralisi."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 40,
+          "hp": 213780,
+          "advantages": [
+            "Guaritori"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 40,
+          "hp": 104238,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Duckstruction Mode",
+              "description": "Quando entra in modalita avanzata, crea una Ward che aumenta tutte le RES e richiama Stamping Devices per la pressione costante."
+            },
+            {
+              "title": "Stamping Devices",
+              "description": "I dispositivi resistono bene a quasi tutto tranne Electro. Se li rompi o li mandi fuori controllo con Electro-Charged o Lunar-Charged, colpiranno il boss e gli spezzeranno la Ward."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "label": "Difficolta 2",
+      "notes": "Stesso set di boss della difficolta 1, con HP superiori.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 70,
+          "hp": 1511265,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall",
+              "description": "Il boss crea una Ward Electro resistente. Se lo colpisci mentre e sotto l'effetto di Stellar Glimmer, la Ward si danneggia e, una volta rotta, il boss resta paralizzato."
+            },
+            {
+              "title": "Galeforce",
+              "description": "Quando vola e richiama gli Anemo Orbs, distruggili con Hydro, Pyro, Electro o Cryo per impedirgli di recuperare potere e mandarlo in paralisi."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 70,
+          "hp": 3668885,
+          "advantages": [
+            "Guaritori"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 70,
+          "hp": 1788934,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Duckstruction Mode",
+              "description": "Quando entra in modalita avanzata, crea una Ward che aumenta tutte le RES e richiama Stamping Devices per la pressione costante."
+            },
+            {
+              "title": "Stamping Devices",
+              "description": "I dispositivi resistono bene a quasi tutto tranne Electro. Se li rompi o li mandi fuori controllo con Electro-Charged o Lunar-Charged, colpiranno il boss e gli spezzeranno la Ward."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "label": "Difficolta 3",
+      "notes": "Versione intermedia del periodo v7.0.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 90,
+          "hp": 956661,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall",
+              "description": "Il boss crea una Ward Electro resistente. Se lo colpisci mentre e sotto l'effetto di Stellar Glimmer, la Ward si danneggia e, una volta rotta, il boss resta paralizzato."
+            },
+            {
+              "title": "Galeforce",
+              "description": "Quando vola e richiama gli Anemo Orbs, distruggili con Hydro, Pyro, Electro o Cryo per impedirgli di recuperare potere e mandarlo in paralisi."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 90,
+          "hp": 2322478,
+          "advantages": [
+            "Guaritori"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 90,
+          "hp": 1132431,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Duckstruction Mode",
+              "description": "Quando entra in modalita avanzata, crea una Ward che aumenta tutte le RES e richiama Stamping Devices per la pressione costante."
+            },
+            {
+              "title": "Stamping Devices",
+              "description": "I dispositivi resistono bene a quasi tutto tranne Electro. Se li rompi o li mandi fuori controllo con Electro-Charged o Lunar-Charged, colpiranno il boss e gli spezzeranno la Ward."
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "label": "Difficolta 4",
+      "notes": "Versione alta del periodo v7.0, con prime varianti boss piu spinte.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 100,
+          "hp": 1430082,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall",
+              "description": "Il boss crea una Ward Electro resistente. Se lo colpisci mentre e sotto l'effetto di Stellar Glimmer, la Ward si danneggia e, una volta rotta, il boss resta paralizzato."
+            },
+            {
+              "title": "Galeforce",
+              "description": "Quando vola e richiama gli Anemo Orbs, distruggili con Hydro, Pyro, Electro o Cryo per impedirgli di recuperare potere e mandarlo in paralisi."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 100,
+          "hp": 3471797,
+          "advantages": [
+            "Guaritori"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 100,
+          "hp": 1692835,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Duckstruction Mode",
+              "description": "Quando entra in modalita avanzata, crea una Ward che aumenta tutte le RES e richiama Stamping Devices per la pressione costante."
+            },
+            {
+              "title": "Stamping Devices",
+              "description": "I dispositivi resistono bene a quasi tutto tranne Electro. Se li rompi o li mandi fuori controllo con Electro-Charged o Lunar-Charged, colpiranno il boss e gli spezzeranno la Ward."
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "label": "Difficolta 5",
+      "notes": "Versione avanzata del periodo v7.0, con meccaniche aggiuntive e HP reali recuperati dal dataset live.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 105,
+          "hp": 10748446,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall: Sturdy Shield",
+              "description": "La Ward Electro iniziale e piu punitiva: quando la spezzi tramite reazioni, il boss entra in paralisi, subisce rebound damage e perde molta resistenza Cryo e Anemo."
+            },
+            {
+              "title": "Galeforce: Fierce Assault",
+              "description": "La fase aerea diventa piu severa. Blocca l'assorbimento degli Orbs con Stellar Glimmer o distruggili rapidamente per farlo crollare e indebolirlo."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 105,
+          "hp": 8068956,
+          "advantages": [
+            "Guaritori",
+            "Shield characters"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            },
+            {
+              "title": "Bloody Pursuit: Treacherous",
+              "description": "Nelle difficolta alte entra in stato Bloody Pursuit, genera uno scudo e continua ad applicare Bond of Life a tutto il party finche non rompi la protezione."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 105,
+          "hp": 13114774,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Heavy Duckstruction Mode",
+              "description": "Versione pesante della modalita del boss: Ward piu resistente, maggiore pressione in arena e riduzione della resistenza Electro quando rompi la difesa."
+            },
+            {
+              "title": "Low-Resistance Stamping Devices",
+              "description": "I dispositivi vanno ancora gestiti con Electro-Charged o Lunar-Charged, ma assorbono piu colpi prima di andare fuori controllo."
+            },
+            {
+              "title": "Fast Frequency-Hopping System",
+              "description": "Il danno che i dispositivi restituiscono al boss cresce in base a quanto li hai colpiti prima di farli schiantare addosso a Knuckle Duckle."
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "label": "Difficolta 6",
+      "notes": "Versione massima della rotazione reference. HP e meccaniche ripresi dalla pagina ispirazione allegata.",
+      "bosses": [
+        {
+          "enemy_id": "Chimera_Manticore",
+          "display_name": "Chimeric Winged Lion",
+          "level": 110,
+          "hp": 23349702,
+          "advantages": [
+            "Reazioni elementali"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "50%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Thundercall: Sturdy Shield",
+              "description": "La Ward Electro iniziale e piu punitiva: quando la spezzi tramite reazioni, il boss entra in paralisi, subisce rebound damage e perde molta resistenza Cryo e Anemo."
+            },
+            {
+              "title": "Galeforce: Fierce Assault",
+              "description": "La fase aerea diventa piu severa. Blocca l'assorbimento degli Orbs con Stellar Glimmer o distruggili rapidamente per farlo crollare e indebolirlo."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Fatuus_Escadron_Wind",
+          "display_name": "Wind Operative",
+          "level": 110,
+          "hp": 17506996,
+          "advantages": [
+            "Guaritori",
+            "Shield characters"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "50%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "-20%"
+          },
+          "mechanics": [
+            {
+              "title": "Rapid Kill",
+              "description": "Consuma HP per usare Hunt Down, curarsi e applicare Bond of Life. Se il Bond resta attivo, il personaggio continua a subire danni."
+            },
+            {
+              "title": "Bloody Pursuit: Treacherous",
+              "description": "Nelle difficolta alte entra in stato Bloody Pursuit, genera uno scudo e continua ad applicare Bond of Life a tutto il party finche non rompi la protezione."
+            }
+          ]
+        },
+        {
+          "enemy_id": "Gastrobot_01",
+          "display_name": "Knuckle Duckle",
+          "level": 110,
+          "hp": 25925713,
+          "advantages": [
+            "Electro-Charged",
+            "Lunar-Charged"
+          ],
+          "disadvantages": [],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Heavy Duckstruction Mode",
+              "description": "Versione pesante della modalita del boss: Ward piu resistente, maggiore pressione in arena e riduzione della resistenza Electro quando rompi la difesa."
+            },
+            {
+              "title": "Low-Resistance Stamping Devices",
+              "description": "I dispositivi vanno ancora gestiti con Electro-Charged o Lunar-Charged, ma assorbono piu colpi prima di andare fuori controllo."
+            },
+            {
+              "title": "Fast Frequency-Hopping System",
+              "description": "Il danno che i dispositivi restituiscono al boss cresce in base a quanto li hai colpiti prima di farli schiantare addosso a Knuckle Duckle."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -4,6 +4,7 @@ Sito personale su GitHub Pages con tema dark, sfondo animato e pagine dedicate a
 
 - Spyral Abyss
 - Imaginarium Theater
+- Stygian Onslaught
 
 Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanLab/)
 
@@ -12,6 +13,7 @@ Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanL
 - Home: `index.html`
 - Spyral Abyss: `abyss.html`
 - Imaginarium Theater: `theater.html`
+- Stygian Onslaught: `stygian.html`
 
 ## Struttura progetto
 
@@ -20,17 +22,20 @@ JuanLab/
 ├── index.html
 ├── abyss.html
 ├── theater.html
+├── stygian.html
 ├── README.md
 └── assets/
     ├── css/
     │   ├── style.css
     │   ├── abyss.css
-    │   └── theater.css
+  │   ├── theater.css
+  │   └── stygian.css
     ├── js/
     │   ├── home.js
     │   ├── main.js
     │   ├── abyss.js
-    │   └── theater.js
+  │   ├── theater.js
+  │   └── stygian.js
     ├── data/
     │   ├── enemies.json
     │   ├── enemies.txt
@@ -41,7 +46,10 @@ JuanLab/
     │   └── theater/
     │       ├── index.json
     │       ├── 2026-08-01.json
-    │       └── 2026-09-01.json
+  │       └── 2026-09-01.json
+  │   └── stygian/
+  │       ├── index.json
+  │       └── 2026-05-19.json
     └── img/
         ├── hero.png
         ├── favicon.png
@@ -128,6 +136,67 @@ Esempio singola strategia:
     ]
   }
 ]
+```
+
+## Aggiornare Stygian Onslaught
+
+1. Crea o modifica un file in `assets/data/stygian/`
+2. Aggiorna `assets/data/stygian/index.json`
+
+Campi principali:
+
+- `version`
+- `period`
+- `description`
+- `selected_difficulty`
+- `overview`
+- `difficulties`
+
+Ogni difficolta contiene un array `bosses`, e ogni boss usa `enemy_id` per recuperare nome e immagine da `assets/data/enemies.json`.
+
+Schema minimo:
+
+```json
+{
+  "version": "v6.7",
+  "selected_difficulty": "6",
+  "overview": {
+    "title": "Panoramica rotazione",
+    "description": "Note generali sulla rotazione",
+    "points": []
+  },
+  "difficulties": {
+    "6": {
+      "label": "Difficolta 6",
+      "notes": "Focus generale",
+      "bosses": [
+        {
+          "enemy_id": "Monitor_02",
+          "hp": 14480438,
+          "level": 100,
+          "advantages": ["Cryo ed Electro"],
+          "disadvantages": ["Personaggi melee"],
+          "resistances": {
+            "pyro": "10%",
+            "hydro": "10%",
+            "dendro": "10%",
+            "electro": "10%",
+            "anemo": "10%",
+            "cryo": "10%",
+            "geo": "10%",
+            "physical": "10%"
+          },
+          "mechanics": [
+            {
+              "title": "Nome meccanica",
+              "description": "Descrizione breve"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
 ```
 
 ## Aggiornare info nemici
