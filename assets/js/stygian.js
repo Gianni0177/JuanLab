@@ -120,6 +120,12 @@
   function renderDifficultySwitch(data) {
     const difficulties = data?.difficulties ?? {};
     const keys = Object.keys(difficulties).sort((a, b) => Number(a) - Number(b));
+
+    if (!keys.length) {
+      difficultyEl.innerHTML = '';
+      return;
+    }
+
     difficultyEl.innerHTML = keys.map((key) => {
       const difficulty = difficulties[key] ?? {};
       const label = difficulty.label || `Difficolta ${key}`;
