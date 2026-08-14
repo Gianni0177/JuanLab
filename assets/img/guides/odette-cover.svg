@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Odette Guide Cover</title>
+  <desc id="desc">Copertina astratta per la guida rapida di Odette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1228"/>
+      <stop offset="55%" stop-color="#182348"/>
+      <stop offset="100%" stop-color="#12293f"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.2" cy="0.25" r="0.6">
+      <stop offset="0%" stop-color="#9cc8ff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#9cc8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.8" cy="0.75" r="0.55">
+      <stop offset="0%" stop-color="#d6b7ff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#d6b7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b8d7ff" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#b8d7ff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#b8d7ff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+
+  <g opacity="0.4">
+    <path d="M80 720 L560 250 L730 420 L1180 80" stroke="url(#line)" stroke-width="3" fill="none"/>
+    <path d="M290 860 L770 390 L980 560 L1450 210" stroke="url(#line)" stroke-width="2" fill="none"/>
+    <path d="M140 540 L460 220 L690 450" stroke="#dff0ff" stroke-opacity="0.25" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <g fill="#e8f3ff" font-family="Segoe UI, Arial, sans-serif">
+    <text x="120" y="190" font-size="46" font-weight="700" letter-spacing="1">Ma quindi, com'e Odette?</text>
+    <text x="120" y="250" font-size="29" font-weight="500" opacity="0.93">Guida Rapida | 7.0 - Snezhnaya</text>
+    <text x="120" y="760" font-size="25" opacity="0.82">Sub-DPS e Supporto Stellar-Conduct / Stellar-Swirl</text>
+  </g>
+
+  <g transform="translate(1200 210)">
+    <circle cx="120" cy="120" r="120" fill="#d5ebff" fill-opacity="0.13"/>
+    <circle cx="120" cy="120" r="88" fill="#f3f9ff" fill-opacity="0.2"/>
+    <path d="M120 40 L138 94 L195 94 L149 128 L166 183 L120 150 L74 183 L91 128 L45 94 L102 94 Z" fill="#eff7ff" fill-opacity="0.9"/>
+  </g>
+</svg>

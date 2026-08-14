@@ -1,4 +1,24 @@
 (function () {
+  const secretLogo = document.querySelector('.hero-secret-logo');
+  const secretTarget = secretLogo?.dataset.secretTarget || 'odette.html';
+  let secretClicks = 0;
+  let secretTimer = null;
+
+  function initSecretLogo() {
+    if (!secretLogo) return;
+    secretLogo.addEventListener('click', () => {
+      secretClicks += 1;
+      if (secretClicks >= 5) {
+        window.location.href = secretTarget;
+        return;
+      }
+      clearTimeout(secretTimer);
+      secretTimer = setTimeout(() => {
+        secretClicks = 0;
+      }, 3500);
+    });
+  }
+
   const canvas = document.getElementById('stars');
   if (!canvas) return;
 
@@ -138,6 +158,7 @@
 
   resize();
   window.addEventListener('resize', resize);
+  initSecretLogo();
   if (changelogToggle) {
     changelogToggle.addEventListener('click', toggleChangelog);
   }
