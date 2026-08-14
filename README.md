@@ -9,11 +9,12 @@ Live: [https://gianni0177.github.io/JuanLab/](https://gianni0177.github.io/JuanL
 
 ## ✨ Contenuti del progetto
 
-Il sito include tre sezioni principali:
+Il sito include quattro sezioni principali:
 
 - Spyral Abyss
 - Imaginarium Theater
 - Stygian Onslaught
+- Guida PG attuale
 
 ## 🧭 Pagine principali
 
@@ -21,6 +22,7 @@ Il sito include tre sezioni principali:
 - Spyral Abyss: `abyss.html`
 - Imaginarium Theater: `theater.html`
 - Stygian Onslaught: `stygian.html`
+- Guida PG attuale: `current-pg.html`
 
 ## 🌳 Struttura del progetto
 
@@ -30,11 +32,12 @@ flowchart TD
     A --> C[abyss.html]
     A --> D[theater.html]
     A --> E[stygian.html]
-    A --> F[assets]
-    F --> G[css]
-    F --> H[js]
-    F --> I[data]
-    F --> J[img]
+    A --> F[current-pg.html]
+    A --> G[assets]
+    G --> H[css]
+    G --> I[js]
+    G --> J[data]
+    G --> K[img]
 ```
 
 ## Avvio locale
@@ -119,6 +122,14 @@ Esempio di singola strategia:
   }
 ]
 ```
+
+### Guida PG attuale
+
+1. Modifica il contenuto della pagina in `current-pg.html`
+2. Se serve un ritocco visivo, aggiorna `assets/css/current-pg.css`
+3. Se vuoi cambiare l’immagine di copertina, sostituisci il file in `assets/img/guides/` o aggiorna il path nel markup
+
+Questa sezione raccoglie la guida del personaggio attuale, con struttura statica e stili dedicati. Il nome del personaggio può cambiare senza cambiare il nome della sezione.
 
 ### Stygian Onslaught
 
