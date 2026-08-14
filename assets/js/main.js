@@ -2,7 +2,7 @@
 
 (function () {
   const secretLogo = document.querySelector('.hero-secret-logo');
-  const secretTarget = secretLogo?.dataset.secretTarget || 'odette.html';
+  const secretTarget = secretLogo?.dataset.secretTarget || 'current-pg.html';
   let secretClicks = 0;
   let secretTimer = null;
 

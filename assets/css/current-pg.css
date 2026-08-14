@@ -1,8 +1,16 @@
-main.odette-page {
+main.current-pg-page {
   max-width: 980px;
   margin: 0 auto;
-  padding-top: 7vh;
-  padding-bottom: 4rem;
+  padding: 0.8rem 1.8rem 2rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+main.current-pg-page > header {
+  margin-bottom: 1.4rem;
 }
 
 .back-link {
@@ -16,7 +24,7 @@ main.odette-page {
   color: var(--pico-color);
 }
 
-.odette-cover {
+.current-pg-cover {
   margin-bottom: 1.6rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
@@ -24,13 +32,13 @@ main.odette-page {
   box-shadow: 0 24px 52px rgba(0, 0, 0, 0.35);
 }
 
-.odette-cover img {
+.current-pg-cover img {
   width: 100%;
   display: block;
 }
 
-.odette-intro,
-.odette-card {
+.current-pg-intro,
+.current-pg-card {
   background: rgba(10, 16, 34, 0.62);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -40,41 +48,54 @@ main.odette-page {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.odette-intro h1 {
+.current-pg-intro h1 {
   margin: 0;
   font-size: 1.6rem;
 }
 
-.odette-kicker {
+.current-pg-kicker {
   margin: 0.35rem 0 0;
   color: var(--pico-muted-color);
 }
 
-.odette-card h2 {
+.current-pg-card h2 {
   margin-top: 0;
   margin-bottom: 0.65rem;
   font-size: 1.12rem;
 }
 
-.odette-card p {
+.current-pg-card p {
   margin: 0.4rem 0;
 }
 
-.odette-card ul {
+.current-pg-card ul {
   margin: 0.45rem 0 0;
 }
 
-.odette-note {
+.current-pg-note {
   margin-top: 0.6rem;
   color: #f1d4d8;
 }
 
 @media (max-width: 720px) {
-  main.odette-page {
-    padding-top: 5vh;
+  main.current-pg-page {
+    padding: 0.5rem 0.8rem 1.25rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
   }
 
-  .odette-intro h1 {
+  .current-pg-intro h1 {
     font-size: 1.35rem;
+  }
+}
+
+@media print {
+  main.current-pg-page {
+    padding: 0.75rem 1rem 1.5rem;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
   }
 }
