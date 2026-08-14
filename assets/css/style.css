@@ -1,5 +1,11 @@
 /* Override minimi su Pico CSS — tutto il resto è gestito dal framework */
 
+@font-face {
+  font-family: 'GenshinDrip';
+  src: url('../fonts/Genshin Impact DRIP FONT.ttf') format('truetype');
+  font-display: swap;
+}
+
 /* sfondo scuro sull'html come fallback; body trasparente per mostrare il canvas */
 html {
   background: #060810;
@@ -183,8 +189,19 @@ article {
 }
 
 .hero-title {
+  font-family: 'GenshinDrip', 'Segoe UI', sans-serif;
   font-size: 1.5rem;
   letter-spacing: -0.02em;
+}
+
+.hero-title-main {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-title-font,
+.current-pg-intro h1 {
+  font-family: 'GenshinDrip', 'Segoe UI', sans-serif;
 }
 
 @keyframes fadeInUp {
