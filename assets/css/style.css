@@ -170,10 +170,6 @@ article {
   flex-shrink: 0;
 }
 
-.hero-secret-logo {
-  cursor: pointer;
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
